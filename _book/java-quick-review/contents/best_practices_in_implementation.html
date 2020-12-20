@@ -1,0 +1,709 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Best Practices · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shubo Zhang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="interview_questions.html" />
+    
+    
+    <link rel="prev" href="unit-testing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter01_syntax.html">
+            
+                <a href="chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter02_oo_concepts.html">
+            
+                <a href="chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="chapter03_exception.html">
+            
+                <a href="chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="chapter04_collections.html">
+            
+                <a href="chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter05_generics.html">
+            
+                <a href="chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter06_reflection.html">
+            
+                <a href="chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="chapter07_io.html">
+            
+                <a href="chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="chapter08_concurrency.html">
+            
+                <a href="chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="chapter09_jdbc.html">
+            
+                <a href="chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="chapter10_lambda-expressions.html">
+            
+                <a href="chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="chapter11_aggregate-operations.html">
+            
+                <a href="chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="appendix-i_HashMap.html">
+            
+                <a href="appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="unit-testing.html">
+            
+                <a href="unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.15" data-path="best_practices_in_implementation.html">
+            
+                <a href="best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="interview_questions.html">
+            
+                <a href="interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="code_tips.html">
+            
+                <a href="code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Notes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../notes/git-commands.html">
+            
+                <a href="../../notes/git-commands.html">
+            
+                    
+                    git commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../notes/git-quick-training.html">
+            
+                <a href="../../notes/git-quick-training.html">
+            
+                    
+                    git quick training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../notes/cmd-commands.html">
+            
+                <a href="../../notes/cmd-commands.html">
+            
+                    
+                    cmd commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Best Practices</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <p>#
+Best Practices in Implementation</p>
+<p>Best Practices for Designing the API</p>
+<ol>
+<li>When deciding on checked exceptions vs. unchecked exceptions, ask yourself, &quot;What action can the client code take when the exception occurs?&quot;
+If the client can take some alternate action to recover from the exception, make it a checked exception. If the client cannot do anything useful, then make the exception unchecked. By useful, I mean taking steps to recover from the exception and not just logging the exception.</li>
+</ol>
+<p>To summarize:
+Client&apos;s reaction when exception happens
+Exception type
+Client code cannot do anything
+Make it an unchecked exception
+Client code will take some useful recovery action based on information in exception
+Make it a checked exception</p>
+<p>Moreover, prefer unchecked exceptions for all programming errors: unchecked exceptions have the benefit of not forcing the client API to explicitly deal with them. They propagate to where you want to catch them, or they go all the way out and get reported. The Java API has many unchecked exceptions, such as NullPointerException, IllegalArgumentException, and IllegalStateException. I prefer working with standard exceptions provided in Java rather than creating my own. They make my code easy to understand and avoid increasing the memory footprint of code.</p>
+<ol>
+<li>Preserve encapsulation (for checked exception).
+Never let implementation-specific checked exceptions escalate to the higher layers. For example, do not propagate SQLException from data access code to the business objects layer. Business objects layer do not need to know about SQLException. You have two options:
+Convert SQLException into another checked exception, if the client code is expected to recuperate from the exception.
+Convert SQLException into an unchecked exception, if the client code cannot do anything about it.
+Most of the time, client code cannot do anything about SQLExceptions. Do not hesitate to convert them into unchecked exceptions. Consider the following piece of code:
+public void dataAccessCode(){
+try{<pre><code>..some code that throws SQLException
+</code></pre></li>
+</ol>
+<p>}catch(SQLException ex){</p>
+<pre><code>ex.printStacktrace();
+</code></pre><p>}
+}</p>
+<p>This catch block just suppresses the exception and does nothing. The justification is that there is nothing my client could do about an SQLException. How about dealing with it in the following manner?</p>
+<pre><code>public void dataAccessCode(){
+try{
+..some code that throws SQLException
+}catch(SQLException ex){
+throw new RuntimeException(ex);
+}
+}
+</code></pre><p>This converts SQLException to RuntimeException. If SQLException occurs, the catch clause throws a new RuntimeException. The execution thread is suspended and the exception gets reported. However, I am not corrupting my business object layer with unnecessary exception handling, especially since it cannot do anything about an SQLException. If my catch needs the root exception cause, I can make use of the getCause() method.</p>
+<p>If you are confident that the business layer can take some recovery action when SQLException occurs, you can convert it into a more meaningful checked exception. But I have found that just throwing RuntimeExceptionsuffices most of the time</p>
+<ol>
+<li>Try not to create new custom exceptions if they do not have useful information for client code.
+What is wrong with following code?<pre><code>public class DuplicateUsernameException
+extends Exception {}
+</code></pre></li>
+</ol>
+<p>It is not giving any useful information to the client code, other than an indicative exception name. Do not forget that Java Exception classes are like other classes, wherein you can add methods that you think the client code will invoke to get more information.
+We could add useful methods to DuplicateUsernameException, such as:</p>
+<pre><code>public class DuplicateUsernameException
+extends Exception {
+public DuplicateUsernameException
+(String username){....}
+public String requestedUsername(){...}
+public String[] availableNames(){...}
+}
+</code></pre><p>The new version provides two useful methods: requestedUsername(), which returns the requested name, and availableNames(), which returns an array of available usernames similar to the one requested. The client could use these methods to inform that the requested username is not available and that other usernames are available. But if you are not going to add extra information, then just throw a standard exception:</p>
+<p>throw new Exception(&quot;Username already taken&quot;);</p>
+<p>Even better, if you think the client code is not going to take any action other than logging if the username is already taken, throw a unchecked exception:</p>
+<p>throw new RuntimeException(&quot;Username already taken&quot;);</p>
+<p>Alternatively, you can even provide a method that checks if the username is already taken.
+It is worth repeating that checked exceptions are to be used in situations where the client API can take some productive action based on the information in the exception. Prefer unchecked exceptions for all programmatic errors. They make your code more readable.</p>
+<ol>
+<li>Document exceptions.
+You can use Javadoc&apos;s @throws tag to document both checked and unchecked exceptions that your API throws. However, I prefer to write unit tests to document exceptions. Tests allow me to see the exceptions in action and hence serve as documentation that can be executed. Whatever you do, have some way by which the client code can learn of the exceptions that your API throws. Here is a sample unit test that tests forIndexOutOfBoundsException:</li>
+</ol>
+<p>public void testIndexOutOfBoundsException() {
+ArrayList blankList = new ArrayList();
+try {
+blankList.get(10);
+fail(&quot;Should raise an IndexOutOfBoundsException&quot;);
+} catch (IndexOutOfBoundsException success) {}
+}</p>
+<p>The code above should throw an IndexOutOfBoundsException when blankList.get(10) is invoked. If it does not, the fail(&quot;Should raise an IndexOutOfBoundsException&quot;) statement explicitly fails the test. By writing unit tests for exceptions, you not only document how the exceptions work, but also make your code robust by testing for exceptional scenarios.
+Best Practices for Using Exceptions</p>
+<p>The next set of best practices show how the client code should deal with an API that throws checked exceptions.</p>
+<ol>
+<li>Always clean up after yourself
+If you are using resources like database connections or network connections, make sure you clean them up. If the API you are invoking uses only unchecked exceptions, you should still clean up resources after use, with try -finally blocks.</li>
+</ol>
+<pre><code>public void dataAccessCode(){
+Connection conn = null;
+try{
+conn = getConnection();
+..some code that throws SQLException
+}catch(SQLException ex){
+ex.printStacktrace();
+} finally{
+DBUtil.closeConnection(conn);
+}
+}
+
+class DBUtil{
+public static void closeConnection
+(Connection conn){
+try{
+conn.close();
+} catch(SQLException ex){
+logger.error(&quot;Cannot close connection&quot;);
+throw new RuntimeException(ex);
+}
+}
+}
+</code></pre><p>DBUtil is a utility class that closes the Connection. The important point is the use of finally block, which executes whether or not an exception is caught. In this example, the finally closes the connection and throws aRuntimeException if there is problem with closing the connection.</p>
+<ol>
+<li>Never use exceptions for flow control
+Generating stack traces is expensive and the value of a stack trace is in debugging. In a flow-control situation, the stack trace would be ignored, since the client just wants to know how to proceed.
+In the code below, a custom exception, MaximumCountReachedException, is used to control the flow.</li>
+</ol>
+<pre><code>public void useExceptionsForFlowControl() {
+try {
+while (true) {
+increaseCount();
+}
+} catch (MaximumCountReachedException ex) {
+}
+//Continue execution
+}
+
+public void increaseCount()
+throws MaximumCountReachedException {
+if (count &gt;= 5000)
+throw new MaximumCountReachedException();
+}
+</code></pre><p>The useExceptionsForFlowControl() uses an infinite loop to increase the count until the exception is thrown. This not only makes the code difficult to read, but also makes it slower. Use exception handling only in exceptional situations.</p>
+<ol>
+<li><p>Do not suppress or ignore exceptions
+When a method from an API throws a checked exception, it is trying to tell you that you should take some counter action. If the checked exception does not make sense to you, do not hesitate to convert it into an unchecked exception and throw it again, but do not ignore it by catching it with {} and then continue as if nothing had happened.</p>
+</li>
+<li><p>Do not catch top-level exceptions
+Unchecked exceptions inherit from the RuntimeException class, which in turn inherits from Exception. By catching the Exception class, you are also catching RuntimeException as in the following code:</p>
+</li>
+</ol>
+<pre><code>try{
+..
+}catch(Exception ex){
+}
+</code></pre><p>The code above ignores unchecked exceptions, as well.</p>
+<ol>
+<li>Always Log exceptions(just once)
+Logging the same exception stack trace more than once can confuse the programmer examining the stack trace about the original source of exception. So just log it once.</li>
+</ol>
+<h2 id="">\</h2>
+<p>file path use &quot;/&quot; instead of &quot;\&quot;, so the project becomes plastform independent.</p>
+<p><strong>Java Clean Code Practices:</strong></p>
+<p><strong>1) Use of descriptive and meaningful variable</strong>,<strong>method and class names</strong>as opposed to relying too much on comments. E.g. calculateTax(BigDecimal amount), UserDAOImpl.java, etc.</p>
+<p><strong>Bad</strong>: List list;</p>
+<p><strong>Good</strong>: List&lt;String&gt; accounts;</p>
+<p><strong>2) Class and functions should be small and focus on doing one thing.Do not duplicate the code. </strong></p>
+<p><strong>Example:</strong> StudentDao.java for data access logic only, Customer.java for model/entity object, StudentService.java for business logic, and CustomerValidator.java for validating input fields, etc.</p>
+<p>Similarly, separate functions like calculateSalary(Long employeeId) will invoke other sub functions with meaningful names like</p>
+<p>calculateBonus(Long employeeId), 
+calculateLeaves(Long employeeId), etc</p>
+<p><strong>3) Methods should not take too many parameters.</strong></p>
+<p><strong>Bad</strong>: processOrder(String id, String name, String address, BigDecimal price, int quantity, BigDecimal discount);</p>
+<p><strong>Good</strong>: processOrder(CustomerDetail customer, OrderDetail order);</p>
+<p>where CustomerDetail is a value object with attributes like code, name etc.</p>
+<p><strong>4) Use a standard code formatting template.</strong></p>
+<p>Share the template across the development team.</p>
+<p><strong>5) </strong>D<strong>eclare the variables with the lowest possible scope.</strong></p>
+<p><strong>For example</strong>, if a variable &#x201C;temp&#x201D; is used only inside a loop, then declare it inside the loop, and not outside.</p>
+<p><strong>6) Don&#x2019;t create variables that you don&#x2019;t use again.</strong></p>
+<p><strong>Example:</strong> instead of Customer customer = repository.save(customer); </p>
+<p>return customer;</p>
+<p><strong>Use: </strong>return repository.save(customer);</p>
+<p><strong>7) Delete needless and commented out code. </strong></p>
+<p>You have source control for the history. </p>
+<p><strong>8) Do not use System.out.println statements.</strong></p>
+<p>Use proper logging frameworks like slf4j and logback for logging.</p>
+<p><strong>9) Make a class final and the object immutable where possible.</strong></p>
+<p>Immutable classes are thread-safe and more secured. </p>
+<p><strong>For example</strong>, the Java String class is immutable and declared as final.</p>
+<p><strong>10) Minimize the accessibility of the packages, classes and its members like methods and variables.
+</strong></p>
+<p><strong>Example:</strong>private, protected, default, and public access modifiers.</p>
+<p>Code to interface as opposed to implementation.</p>
+<p><strong>Bad</strong>: ArrayList&lt;String&gt; names = new ArrayList&lt;String&gt;();</p>
+<p><strong>Good</strong>: List&lt;String&gt; names = new ArrayList&lt;String&gt;();</p>
+<p><strong>11) Use right data types.</strong></p>
+<p>For example, use BigDecimal instead of floating point variables like float or double for monetary values. Use enums instead of int constants.</p>
+<p><strong>12) Avoid finalizers and properly override equals, hashCode, and toString methods.</strong></p>
+<p>The equals and hashCode contract must be correctly implemented to prevent hard to debug defects.</p>
+<p><strong>13) Write fail-fast code by validating the input parameters.Apply design by contract.</strong></p>
+<p>Return an empty collection or throw an exception as opposed to returning a null to avoid nullpointer exceptions which are hard to debug. </p>
+<p><strong>14) Security Practices:</strong></p>
+<p>Don&#x2019;t log sensitive data.</p>
+<p>Clearly document security related information.</p>
+<p>Validate user inputs.</p>
+<p>Favor immutable objects.</p>
+<p>Security to prevent SQL injection attack.</p>
+<p>Release resources (Streams, Connections, etc).Security to prevent denial of service attack (DoS) and resource leak issues.</p>
+<p>Don&#x2019;t let sensitive information like file paths, server names, host names, etc escape via exceptions.</p>
+<p>Follow proper security best practices like SSL (one-way, two-way, etc), encrypting sensitive data, authentication/authorization, etc.</p>
+<p><strong>15) Exception Handling</strong></p>
+<p>Use exceptions as opposed to return codes.</p>
+<p>Don&#x2019;t ignore or suppress exceptions. Standardize the use of checked and unchecked exceptions. Throw exceptions early and catch them late.</p>
+<p><strong>17) Concurrency</strong></p>
+<p>Write thread-safe code with proper synchronization and use of immutable objects. Also, document thread-safety.</p>
+<p>Keep synchronization section small and favor the use of the new concurrency libraries to prevent excessive synchronization.</p>
+<p><strong>18) Performance</strong></p>
+<p>Reuse objects via flyweight design pattern.</p>
+<p>Badly constructed SQL, REGEX, etc.</p>
+<p>Inefficient Java coding and algorithms in frequently executed methods leading to death by thousand cuts.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="unit-testing.html" class="navigation navigation-prev " aria-label="Previous page: Unit Testing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="interview_questions.html" class="navigation navigation-next " aria-label="Next page: Interview Questions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Best Practices","level":"2.1.15","depth":2,"next":{"title":"Interview Questions","level":"2.1.16","depth":2,"path":"java-quick-review/contents/interview_questions.md","ref":"java-quick-review/contents/interview_questions.md","articles":[]},"previous":{"title":"Unit Testing","level":"2.1.14","depth":2,"path":"java-quick-review/contents/unit-testing.md","ref":"java-quick-review/contents/unit-testing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"java-quick-review/contents/best_practices_in_implementation.md","mtime":"2020-12-20T13:04:36.794Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T20:14:26.445Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

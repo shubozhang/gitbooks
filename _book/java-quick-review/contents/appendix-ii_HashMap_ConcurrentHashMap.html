@@ -1,0 +1,618 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix-ConcurrentHashMap · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shubo Zhang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="unit-testing.html" />
+    
+    
+    <link rel="prev" href="appendix-i_HashMap.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter01_syntax.html">
+            
+                <a href="chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter02_oo_concepts.html">
+            
+                <a href="chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="chapter03_exception.html">
+            
+                <a href="chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="chapter04_collections.html">
+            
+                <a href="chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter05_generics.html">
+            
+                <a href="chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter06_reflection.html">
+            
+                <a href="chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="chapter07_io.html">
+            
+                <a href="chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="chapter08_concurrency.html">
+            
+                <a href="chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="chapter09_jdbc.html">
+            
+                <a href="chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="chapter10_lambda-expressions.html">
+            
+                <a href="chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="chapter11_aggregate-operations.html">
+            
+                <a href="chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="appendix-i_HashMap.html">
+            
+                <a href="appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.13" data-path="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="unit-testing.html">
+            
+                <a href="unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="best_practices_in_implementation.html">
+            
+                <a href="best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="interview_questions.html">
+            
+                <a href="interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="code_tips.html">
+            
+                <a href="code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Notes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../notes/git-commands.html">
+            
+                <a href="../../notes/git-commands.html">
+            
+                    
+                    git commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../notes/git-quick-training.html">
+            
+                <a href="../../notes/git-quick-training.html">
+            
+                    
+                    git quick training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../notes/cmd-commands.html">
+            
+                <a href="../../notes/cmd-commands.html">
+            
+                    
+                    cmd commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Appendix-ConcurrentHashMap</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <p><code>HashMap</code>is a very powerful data structure in<a href="http://crunchify.com/category/java-tutorials/" target="_blank">Java</a>. We use it everyday and almost in all applications. There are quite a few examples which I have written before on<a href="http://crunchify.com/implement-simple-threadsafe-cache-using-hashmap-without-using-synchronized-collection/" target="_blank">How to Implement Threadsafe cache</a>, How to convert<a href="http://crunchify.com/how-to-convert-hashmap-to-arraylist-in-java/" target="_blank">Hashmap to Arraylist</a>?</p>
+<p>We used Hashmap in both above examples but those are pretty simple use cases of Hashmap.<code>HashMap is a non-synchronized</code>collection class.</p>
+<h4 id="do-you-have-any-of-below-questions">Do you have any of below questions?</h4>
+<ul>
+<li>What&#x2019;s the difference between ConcurrentHashMap and Collections.synchronizedMap(Map)?</li>
+<li>What&#x2019;s the difference between ConcurrentHashMap and Collections.synchronizedMap(Map) in term of performance?</li>
+<li>ConcurrentHashMap vs Collections.synchronizedMap()</li>
+<li>Popular HashMap and ConcurrentHashMap interview questions</li>
+</ul>
+<p>In this tutorial we will go over all above queries and reason <code>why and how</code>we could Synchronize Hashmap?</p>
+<h3 id="why">Why?</h3>
+<p>The Map object is an associative containers that store elements, formed by a combination of a uniquely identify<code>key</code> and a mapped<code>value</code>. If you have very highly concurrent application in which you may want to modify or read key value in different threads then it&#x2019;s ideal to use Concurrent Hashmap. Best example is<a href="http://crunchify.com/java-producer-consumer-example-handle-concurrent-read-write/" target="_blank">Producer Consumer</a> which handles concurrent read/write.</p>
+<p>So what does the thread-safe Map means? If<code>multiple threads</code>access a hash map concurrently, and at least one of the threads modifies the map structurally, it<code>must be synchronized externally</code>to avoid an inconsistent view of the contents.</p>
+<h3 id="how">How?</h3>
+<p>There are two ways we could synchronized<a href="http://crunchify.com/java-hashmap-containskeyobject-key-and-containsvalueobject-value-check-if-key-exists-in-map/" target="_blank">HashMap</a></p>
+<ol>
+<li>Java Collections synchronizedMap() method</li>
+<li>Use ConcurrentHashMap</li>
+</ol>
+<pre><code class="lang-java">//Hashtable
+Map&lt;String, String&gt; normalMap = new Hashtable&lt;String, String&gt;();
+//synchronizedMap
+synchronizedHashMap = Collections.synchronizedMap(new HashMap&lt;String, String&gt;());
+//ConcurrentHashMap
+concurrentHashMap = new ConcurrentHashMap&lt;String, String&gt;();
+</code></pre>
+<p>ConcurrentHashMap</p>
+<p>You should use ConcurrentHashMap when you need very high concurrency in your project.
+It is thread safe without synchronizing the whole map.
+Reads can happen very fast while write is done with a lock.
+There is no locking at the object level.
+The locking is at a much finer granularity at a hashmap bucket level.
+ConcurrentHashMap doesn&#x2019;t throw a ConcurrentModificationException if one thread tries to modify it while another is iterating over it.
+ConcurrentHashMap uses multitude of locks.</p>
+<p>SynchronizedHashMap</p>
+<p>Synchronization at Object level.
+Every read/write operation needs to acquire lock.
+Locking the entire collection is a performance overhead.
+This essentially gives access to only one thread to the entire map &amp; blocks all the other threads.
+It may cause contention.
+SynchronizedHashMap returns Iterator, which fails-fast on concurrent modification.
+Now let&#x2019;s take a look at code</p>
+<p>Create class CrunchifyConcurrentHashMapVsSynchronizedHashMap.java
+Create object for each HashTable, SynchronizedMap and CrunchifyConcurrentHashMap
+Add and retrieve 500k entries from Map
+Measure start and end time and display time in milliseconds
+We will use ExecutorService to run 5 threads in parallel</p>
+<pre><code class="lang-java">package crunchify.com.tutorials;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+/**
+* @author Crunchify.com
+*
+*/
+public class CrunchifyConcurrentHashMapVsSynchronizedMap {
+public final static int THREAD_POOL_SIZE = 5;
+public static Map&lt;String, Integer&gt; crunchifyHashTableObject = null;
+public static Map&lt;String, Integer&gt; crunchifySynchronizedMapObject = null;
+public static Map&lt;String, Integer&gt; crunchifyConcurrentHashMapObject = null;
+public static void main(String[] args) throws InterruptedException {
+// Test with Hashtable Object
+crunchifyHashTableObject = new Hashtable&lt;String, Integer&gt;();
+crunchifyPerformTest(crunchifyHashTableObject);
+// Test with synchronizedMap Object
+crunchifySynchronizedMapObject = Collections.synchronizedMap(new HashMap&lt;String, Integer&gt;());
+crunchifyPerformTest(crunchifySynchronizedMapObject);
+// Test with ConcurrentHashMap Object
+crunchifyConcurrentHashMapObject = new ConcurrentHashMap&lt;String, Integer&gt;();
+crunchifyPerformTest(crunchifyConcurrentHashMapObject);
+}
+public static void crunchifyPerformTest(final Map&lt;String, Integer&gt; crunchifyThreads) throws InterruptedException {
+System.out.println(&quot;Test started for: &quot; + crunchifyThreads.getClass());
+long averageTime = 0;
+for (int i = 0; i &lt; 5; i++) {
+long startTime = System.nanoTime();
+ExecutorService crunchifyExServer = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
+for (int j = 0; j &lt; THREAD_POOL_SIZE; j++) {
+crunchifyExServer.execute(new Runnable() {
+@SuppressWarnings(&quot;unused&quot;)
+@Override
+public void run() {
+for (int i = 0; i &lt; 500000; i++) {
+Integer crunchifyRandomNumber = (int) Math.ceil(Math.random() * 550000);
+// Retrieve value. We are not using it anywhere
+Integer crunchifyValue = crunchifyThreads.get(String.valueOf(crunchifyRandomNumber));
+// Put value
+crunchifyThreads.put(String.valueOf(crunchifyRandomNumber), crunchifyRandomNumber);
+}
+}
+});
+}
+// Make sure executor stops
+crunchifyExServer.shutdown();
+// Blocks until all tasks have completed execution after a shutdown request
+crunchifyExServer.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
+long entTime = System.nanoTime();
+long totalTime = (entTime - startTime) / 1000000L;
+averageTime += totalTime;
+System.out.println(&quot;2500K entried added/retrieved in &quot; + totalTime + &quot; ms&quot;);
+}
+System.out.println(&quot;For &quot; + crunchifyThreads.getClass() + &quot; the average time is &quot; + averageTime / 5 + &quot; ms\n&quot;);
+}
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appendix-i_HashMap.html" class="navigation navigation-prev " aria-label="Previous page: Appendix-HashMap">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="unit-testing.html" class="navigation navigation-next " aria-label="Next page: Unit Testing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix-ConcurrentHashMap","level":"2.1.13","depth":2,"next":{"title":"Unit Testing","level":"2.1.14","depth":2,"path":"java-quick-review/contents/unit-testing.md","ref":"java-quick-review/contents/unit-testing.md","articles":[]},"previous":{"title":"Appendix-HashMap","level":"2.1.12","depth":2,"path":"java-quick-review/contents/appendix-i_HashMap.md","ref":"java-quick-review/contents/appendix-i_HashMap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"java-quick-review/contents/appendix-ii_HashMap_ConcurrentHashMap.md","mtime":"2020-12-20T13:04:36.793Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T20:14:26.445Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
