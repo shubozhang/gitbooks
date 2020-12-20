@@ -1,0 +1,38 @@
+{
+  "title": "GitBook",
+  "description": "",
+  "author": "Shubo Zhang",
+  "output.name": "site",
+  "gitbook": "3.2.3",
+  "root": ".",
+  "structure": {
+    "readme": "README.md"
+  },
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-highlight",
+    "-livereload",
+    "advanced-emoji@^0.2.1",
+    "include-codeblock@^3.0.2",
+    "chapter-fold",
+    "back-to-top-button"
+  ],
+  "pluginsConfig": {
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "edit": true
+    },
+
+    "tbfed-pagefooter": {
+      "copyright": "Copyright © shubozhang.com 2020",
+      "modify_label": "modified_date：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "favicon": {
+      "shortcut": "favicon.ico",
+      "bookmark": "favicon.ico"
+    }
+  }
+}

@@ -1,0 +1,1285 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Collections · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shubo Zhang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter05_generics.html" />
+    
+    
+    <link rel="prev" href="chapter03_exception.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter01_syntax.html">
+            
+                <a href="chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter02_oo_concepts.html">
+            
+                <a href="chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="chapter03_exception.html">
+            
+                <a href="chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4" data-path="chapter04_collections.html">
+            
+                <a href="chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter05_generics.html">
+            
+                <a href="chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter06_reflection.html">
+            
+                <a href="chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="chapter07_io.html">
+            
+                <a href="chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="chapter08_concurrency.html">
+            
+                <a href="chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="chapter09_jdbc.html">
+            
+                <a href="chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="chapter10_lambda-expressions.html">
+            
+                <a href="chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="chapter11_aggregate-operations.html">
+            
+                <a href="chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="appendix-i_HashMap.html">
+            
+                <a href="appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="unit-testing.html">
+            
+                <a href="unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="best_practices_in_implementation.html">
+            
+                <a href="best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="interview_questions.html">
+            
+                <a href="interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="code_tips.html">
+            
+                <a href="code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Notes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../notes/git-commands.html">
+            
+                <a href="../../notes/git-commands.html">
+            
+                    
+                    git commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../notes/git-quick-training.html">
+            
+                <a href="../../notes/git-quick-training.html">
+            
+                    
+                    git quick training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../notes/cmd-commands.html">
+            
+                <a href="../../notes/cmd-commands.html">
+            
+                    
+                    cmd commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Collections</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-iv-collections">Chapter IV: Collections</h1>
+<ol>
+<li><a href="#1-interface-structure">Interface Structure</a></li>
+<li>The Collection Interface</li>
+<li>Set</li>
+<li>List</li>
+<li>Map</li>
+</ol>
+<h2 id="1-interface-structure">1. Interface Structure</h2>
+<p>Core Interfaces:</p>
+<p><img src="images/04-core_interfaces.PNG" alt=""></p>
+<p>Completed Inheritance Structure:</p>
+<p><img src="../images/04-inheritance.PNG" width="800" height="400"></p>
+<ul>
+<li>Advantages of Collection Framework:<ul>
+<li>Consistent API : The API has a basic set of interfaces like Collection, Set, List, or Map. All classes (ArrayList, 
+LinkedList, Vector, etc) that implement these interfaces have some common set of methods.</li>
+<li>Reduces programming effort: A programmer doesn&#x2019;t have to worry about the design of Collection, and he can focus on its 
+best use in his program.</li>
+<li>Increases program speed and quality: Increases performance by providing high-performance implementations of useful data 
+structures and algorithms.</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-collection">1.1 Collection</h3>
+<p>The root of the collection interface hierarchy. A collection represents a group of objects known as its elements. 
+Collections may have one or some following properties:</p>
+<ul>
+<li>Allow duplicate elements</li>
+<li>Do not allow duplicate elements: <strong>Set</strong> / <strong>Map</strong> (no duplicate keys)</li>
+<li>Maintain elements inserted order</li>
+<li>Do not maintain elements inserted order</li>
+<li>Sorted</li>
+<li>Unsorted</li>
+<li>First-in, first-out (FIFO)</li>
+<li>Last-in, first-out (LIFO)</li>
+</ul>
+<h3 id="12-set">1.2 Set</h3>
+<p>A collection that cannot contain duplicate elements.</p>
+<h3 id="13-list">1.3 List</h3>
+<p>An ordered collection (sometimes called a sequence). Lists can contain duplicate elements. 
+The user of a List generally has precise control over where in the list each element is inserted and 
+can access elements by their integer index (position).</p>
+<h3 id="14-queue">1.4 Queue</h3>
+<p>A collection used to hold multiple elements prior to processing. It can order elements in a FIFO (first-in, first-out) manner.</p>
+<h3 id="15-deque">1.5 Deque</h3>
+<p>A collection used to hold multiple elements prior to processing. Deques can be used both as FIFO (first-in, first-out) 
+and LIFO (last-in, first-out). It implements both stacks and queues at the same time.</p>
+<h3 id="16-map">1.6 Map</h3>
+<p>An object that maps keys to values. A Map cannot contain duplicate keys; each key can map to at most one value.</p>
+<p>The last two core collection interfaces are merely sorted versions of Set and Map:</p>
+<h3 id="17-sortedset">1.7 SortedSet</h3>
+<p>A Set that maintains its elements in ascending order.</p>
+<h3 id="18-sortedmap">1.8 SortedMap</h3>
+<p>A map that maintains its mappings in ascending key order. Sorted maps are used for naturally ordered collections of 
+key/value pairs, such as dictionaries and telephone directories.</p>
+<h2 id="2-the-collection-interface">2. The Collection Interface</h2>
+<h3 id="21-features">2.1 Features</h3>
+<ul>
+<li>Store a group of objects.</li>
+<li>Varied-size</li>
+<li><strong>Cannot store primitive type data</strong></li>
+<li><strong>Un-synchronized</strong> : basically all collection type are un-synchronized. Only these three are synchronized: 
+Hashtable (not from collection), Vector, Stack.</li>
+<li>To make a collection synchronized: <code>Collections.synchronizedCollection(Collection&lt;T&gt; c)</code></li>
+</ul>
+<h3 id="22-traversing-collections">2.2 Traversing Collections</h3>
+<ol>
+<li>Use for-each construct</li>
+<li>Use Iterators</li>
+<li><p>Use aggregate operations (JDK 8)</p>
+</li>
+<li><p>for-each construct</p>
+<pre><code>  for (Object o : collection) { system.out.println(o)}
+</code></pre></li>
+<li><p>Iterators</p>
+<pre><code>  public interface Iterator&lt;E&gt; {
+  boolean hasNext();
+  E next();
+  void remove(); //optional
+  }
+</code></pre><ul>
+<li><p>The remove method removes the last element that was returned by next. The remove method may be called only once per call to next 
+and throws an exception if this rule is violated. </p>
+</li>
+<li><p><strong>Note that Iterator.remove is the only safe way to modify a collection during iteration.</strong></p>
+</li>
+<li><p>Use Iterator instead of the for-each construct when you need to:</p>
+<ul>
+<li>Remove the current element. The for-each construct hides the iterator, so you cannot call remove. 
+<strong>Therefore, the for-each construct is not usable for filtering.</strong></li>
+<li><p>Iterate over multiple collections in parallel.</p>
+<pre><code>static void filter(Collection&lt;?&gt; c) {
+for (Iterator&lt;?&gt; it = c.iterator(); it.hasNext(); )
+if (!cond(it.next()))
+it.remove();
+}
+</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Aggregate Operations (Java 8)</p>
+<pre><code>  myShapesCollection.stream()
+  .filter(e -&gt; e.getColor() == Color.RED)
+  .forEach(e -&gt; System.out.println(e.getName()));
+</code></pre></li>
+</ol>
+<h3 id="23-apis">2.3 APIs</h3>
+<ul>
+<li>Bulk Operations</li>
+<li>Array Operations</li>
+</ul>
+<p>2.3.1 Bulk Operations</p>
+<ul>
+<li><p><strong>containsAll</strong>: returns true if the target Collection contains all of the elements in the specified Collection.</p>
+</li>
+<li><p><strong>addAll</strong>: adds all of the elements in the specified Collection to the target Collection.</p>
+</li>
+<li><p><strong>removeAll</strong>: removes from the target Collection all of its elements that are also contained in the specified Collection.</p>
+</li>
+<li><p><strong>retainAll</strong>: removes from the target Collection all its elements that are not also contained in the specified Collection. That is, it retains only those elements in the target Collection that are also contained in the specified Collection.</p>
+</li>
+<li><p><strong>clear</strong>: removes all elements from the Collection.</p>
+</li>
+</ul>
+<p>2.3.2</p>
+<ul>
+<li>toArray ( )</li>
+<li>Arrays.asList ( )</li>
+</ul>
+<p>The toArray methods are provided as a bridge between collections and older APIs that expect arrays on input. 
+The array operations allow the contents of a Collection to be translated into an array.</p>
+<pre><code>// c is a Collection. Note:
+Object[] a = c.toArray();
+
+String[] a = c.toArray(new String[0]);
+</code></pre><p><strong>Arrays.asList(): Returns a fixed-size list backed by the specified array.</strong> 
+(Changes to the returned list &quot;write through&quot; to the array.) This method acts as bridge between array-based a
+nd collection-based APIs, in combination with Collection.toArray(). The returned list is serializable and 
+implements RandomAccess.</p>
+<pre><code>List&lt;String&gt; stooges = Arrays.asList(&quot;Larry&quot;, &quot;Moe&quot;, &quot;Curly&quot;);
+
+stooges.add(&quot;Don&quot;); // error(UnsupportedOperationException), stooges is an array object
+</code></pre><p>Parameters:</p>
+<ul>
+<li>a - the array by which the list will be backed</li>
+<li>Returns:<strong>a list view of the specified array</strong>. It is not a list. So you cannot implement stooges.add().</li>
+</ul>
+<h3 id="24-how-to-write-hashcode">2.4 How to write HashCode</h3>
+<pre><code>hashCode = 31 * hashCode + (father == null ? 0 : father.hashCode());
+hashCode = 31 * hashCode + depth;
+hashCode = 31 * hashCode + cost;
+hashCode = 31 * hashCode + matrix.hashCode();
+hashCode = 31 * hashCode + java.util.Arrays.hashCode(coordinates);
+</code></pre><h2 id="3-set">3. Set</h2>
+<p>Set does not contain duplicate elements</p>
+<ul>
+<li>Un-sorted: HashSet  (do not keep insert order )</li>
+<li>Un-sorted: LinkedHashSet  (keep insert order )</li>
+<li>Sorted: TreeSet</li>
+</ul>
+<h3 id="31-hashset">3.1 HashSet</h3>
+<ul>
+<li>Use hashCode and equals to check uniqueness  (element must override hashCode and equals methods )</li>
+<li>If hashCode is different, save element into HashSet. No need to check equals().</li>
+<li>If hashCode is same, but not equals, save element into HashSet.</li>
+<li>If both hashCode and equals are same, duplicate elements. Do not save it.</li>
+<li>HashSet permits null.</li>
+</ul>
+<h3 id="32-treeset">3.2 TreeSet</h3>
+<ul>
+<li><p>Sorting method 1: Element itself comparable</p>
+</li>
+<li><p>Element implements Comparable interface</p>
+</li>
+<li>Override compareTo ( )</li>
+<li><p>If element itself has nature order, like String, no need to implement Comparable interface.</p>
+</li>
+<li><p>Sorting method 2: Construct TreeSet with Comparator</p>
+</li>
+<li><p>Create a customized comparator class which implements Comparator interface</p>
+</li>
+<li>Override compare ( ) method</li>
+<li><p>Note: TreeSet&apos;s comparator will override object&apos;s compareTo ( ) method.</p>
+<pre><code>  public class ComparatorByLength implements Comparator {
+      @Override
+      public int compare(Object o1, Object o2) {
+      String s1 = (String)o1;
+      String s2 = (String)o2;
+
+      int temp = s1.length()-s2.length();
+      return temp==0? s1.compareTo(s2): temp;
+      // return 1; // keep inserting order
+      // return -1 // keep inverse-inserting order
+      }
+  }
+
+  TreeSet ts = new TreeSet(new ComparatorByLength());
+</code></pre></li>
+</ul>
+<h2 id="4-list">4. List</h2>
+<ul>
+<li>Array: It is simple fixed size arrays that can contains both primitive data and object. </li>
+<li>List List only supports objects.</li>
+<li>Vector:synchronized, CRUD performance is low.</li>
+<li>ArrayList: dynamic size array, un-synchronized, CRUD performance is faster than Vector  (designed to replace vector ). 
+Read and update are faster than LinkedList. Write in sequence is faster than LinkedList. It is not good for 
+random add and delete elements.</li>
+<li><p>LinkedList:un-synchronized, random add and delete are faster than ArrayList&#x3002;</p>
+</li>
+<li><p>LinkedList VS ArrayList</p>
+<ul>
+<li>LinkedList store elements within a doubly-linked list data structure.</li>
+<li>LinkedList allows for constant-time insertions or removals, but only sequential access of elements.</li>
+<li>LinkedList costs more memory</li>
+<li>ArrayList: allow random access, so you can grab any element in constant time.</li>
+<li>ArrayList: random adding and removing are slower than LinkedList.</li>
+</ul>
+</li>
+<li><p>ArrayList Auto resizing</p>
+<ul>
+<li>Each ArrayList instance has a capacity. The capacity is the size of the array used to store the elements in 
+the list. It is always at least as large as the list size. As elements are added to an ArrayList, its capacity 
+grows automatically. The details of the growth policy are not specified beyond the fact that adding an 
+element has constant amortized time cost.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-map">5. Map</h2>
+<ul>
+<li>Map&#xFF1A;adds  (key, value ), whereas Collection adds element.</li>
+<li><strong>key must be unique</strong></li>
+<li><p><strong>key can be null, but can only have one</strong></p>
+<ul>
+<li>HashMap does not call hashcode when null is passed as key and null Key is handled as special case.</li>
+<li><p><code>Put Method</code>: HashMap puts null key in bucket 0 and maps null as key to passed value. HashMap does it by linked 
+list data structure. HashMap uses linked list data structure internally. Linked list data structure used by HashMap 
+(a static class in HashMap.java)</p>
+<pre><code>  static class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
+          final K key;
+          V value;
+          Entry&lt;K,V&gt; next;
+          final int hash;
+  }
+</code></pre><p>  In Entry class the K is set to null and value mapped to value passed in put method.</p>
+</li>
+<li><p><code>Get Method</code>: While in Hashmap get method the checks if key is passed as null. Search Value for null key 
+in bucket 0. Hence there can only be one null key in one hashmap object.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="51-apis">5.1 APIs</h3>
+<ul>
+<li><p>Add</p>
+<pre><code>put(K key, V value)
+// Return: Associates the specified value with the specified key in this map (optional // operation).
+</code></pre></li>
+<li><p>Delete</p>
+<pre><code>void clear()// Removes all of the mappings from this map (optional operation).
+value remove(key)//Removes the mapping for a key from this map if it is present (optional operation).
+</code></pre></li>
+<li><p>Check</p>
+<pre><code>boolean containsKey(key)//Returns true if this map contains a mapping for the specified key.
+boolean containsValue(value)//Returns true if this map maps one or more keys to the specified value.
+boolean isEmpty()//Returns true if this map contains no key-value mappings.
+</code></pre></li>
+<li><p>Get</p>
+<pre><code>value get(key)//Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+int size()//Returns the number of key-value mappings in this map.
+</code></pre></li>
+</ul>
+<h3 id="52-implementations">5.2 Implementations</h3>
+<ul>
+<li>Hashtable :Synchronized, <strong>null cannot be key or value</strong>.</li>
+<li>HashMap : Un-synchronized and permits one null key and any number of null values. 
+If you store the same key, like null, the value will be updated.</li>
+<li>LinkedHashMap: it is similar to HashMap, but keeps insert order.</li>
+<li>TreeMap : The TreeMap is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, 
+depending on which constructor is used.</li>
+<li><p>HashMap and HashTable check key  (check both hasCode and equals )</p>
+<pre><code>  if (key1.hashCode() == key2.hashCode() &amp;&amp; key1.equals(key2)) { return true;}
+</code></pre></li>
+<li><p>HashMap and HashTable check value  (only check equals )</p>
+<pre><code>  if (value1.equals(value2)) { return true;}
+</code></pre></li>
+<li><p>About <code>null</code> key in <code>HashTable</code> and <code>HashTable</code>:</p>
+<ul>
+<li>To successfully store and retrieve objects from a HashTable, the objects used as keys must implement the hashCode method and 
+the equals method. Since null is not an object, it can&apos;t implement these methods.</li>
+<li><code>HashMap</code> has a defensive check for null key. If key == null, it won&apos;t implement <code>hashCode()</code>, but puts <code>null</code> key in bucket 0 and
+maps <code>null</code> as key to passed value.</li>
+</ul>
+</li>
+<li><p>Declare a HashMap</p>
+<pre><code>// default values: initialCapacity = 16, loadFactor = 0.75
+// when m.size() &gt; initialCapacity * loadFactor, it will automatic auto resizing.
+HashMap m = new HashMap(int initialCapacity, float loadFactor);
+</code></pre><h2 id="6-queue">6. Queue</h2>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Queue is empty</th>
+<th>Queue is empty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add (e ): throws IllegalStateException</td>
+<td>offer (e ): return false</td>
+</tr>
+<tr>
+<td>remove ( ): throws NoSuchElementException</td>
+<td>poll ( ): return null</td>
+</tr>
+<tr>
+<td>element ( ): throws NoSuchElementException</td>
+<td>peek ( ): return null</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-deque">7. Deque</h2>
+<p><img src="../images/04-deque.PNG" alt=""></p>
+<h2 id="8-synchronization-fail-fast-and-fail-safe-iterators">8. Synchronization, Fail-fast and Fail-safe Iterators</h2>
+<h3 id="81-write-a-synchronized-list">8.1 Write a synchronized list</h3>
+<pre><code>List list = new ArrayList(); //un-synchronized
+list = MyCollections.synList(list);// return a synchronized list.
+
+// add synchronization
+class MyCollections{
+    public static List synList(List list){ return new MyList(list); }
+    private class MyList implements List{
+        private List list;
+        private static final Object lock = new Object();
+        MyList(List list){ this.list = list; }
+
+        public boolean add(Object obj){ synchronized(lock){ return list.add(obj);} }
+
+        public boolean remove(Object obj){ synchronized(lock){ return list.remove(obj);} }
+    }
+}
+</code></pre><h3 id="82-fail-fast-and-fail-safe-iterators">8.2 Fail-fast and Fail-safe Iterators</h3>
+<p><strong>Concurrent Modification:</strong> When more threads are iterating over a collection, in between, one thread changes the structure of 
+the collection  (either adding the element to the collection or by deleting the element in the collection or by updating the 
+value at particular position in the collection ) is known as Concurrent Modification.</p>
+<p><strong>NOTE</strong>: structural modification is any operation that <strong>ADD</strong> or <strong>delete</strong> element;
+<strong>NOT A STRUCTURAL MODIFICATION</strong>: merely setting the value of an element  (in case of list ) or changing the value associated 
+with an existing key  (in case of map ).</p>
+<ul>
+<li><p>Fail-fast iterator: when add or delete concurrent modification applies on a un-synchronized collection, fail-fast iterator 
+throws ConcurrentModificationException.</p>
+</li>
+<li><p>Fail-safe iterator: allows add or delete concurrent modification applies on a concurrent version of collection. 
+Fail Safe Iterator makes copy of the internal data structure  (object array ) and iterates over the copied data structure. 
+So , original data structure remains structurally unchanged. Hence , no ConcurrentModificationException throws by the fail 
+safe iterator.</p>
+</li>
+</ul>
+<pre><code>public class FailFastExample{
+    public static void main(String[] args){
+        Map&lt;String,String&gt; premiumPhone = new HashMap&lt;String,String&gt;();
+        premiumPhone.put(&quot;Apple&quot;, &quot;iPhone&quot;);
+        premiumPhone.put(&quot;HTC&quot;, &quot;HTC one&quot;);
+        premiumPhone.put(&quot;Samsung&quot;,&quot;S5&quot;);
+
+        Iterator iterator = premiumPhone.keySet().iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(premiumPhone.get(iterator.next()));
+            premiumPhone.put(&quot;Sony&quot;, &quot;Xperia Z&quot;);
+        }
+    }
+}
+
+// Output:
+iPhone
+Exception in thread &quot;main&quot; java.util.ConcurrentModificationException
+at java.util.HashMap$HashIterator.nextEntry(Unknown Source)
+at java.util.HashMap$KeyIterator.next(Unknown Source)
+at FailFastExample.main(FailFastExample.java:20)
+</code></pre><pre><code>public class FailSafeExample{
+    public static void main(String[] args){
+        ConcurrentHashMap&lt;String,String&gt; premiumPhone = new ConcurrentHashMap&lt;String,String&gt;();
+        premiumPhone.put(&quot;Apple&quot;, &quot;iPhone&quot;);
+        premiumPhone.put(&quot;HTC&quot;, &quot;HTC one&quot;);
+        premiumPhone.put(&quot;Samsung&quot;,&quot;S5&quot;);
+
+        Iterator iterator = premiumPhone.keySet().iterator();
+
+        while (iterator.hasNext()){
+            System.out.println(premiumPhone.get(iterator.next()));
+            premiumPhone.put(&quot;Sony&quot;, &quot;Xperia Z&quot;);
+        }
+    }
+}
+// Output:
+S5
+HTC one
+iPhone
+</code></pre><p><img src="../images/04-iterator.PNG" alt=""></p>
+<h2 id="9-collections">9. Collections</h2>
+<p>Collections is a class that consists exclusively of static methods that operate on or return collections. It contains polymorphic 
+algorithms that operate on collections, &quot;wrappers&quot;, which return a new collection backed by a specified collection, 
+and a few other odds and ends.</p>
+<p>It provides manipulations on Set, List, Map, etc.</p>
+<h3 id="91-sort-operation">9.1 Sort Operation</h3>
+<ul>
+<li>reverse (List )</li>
+<li>shuffle (List )</li>
+<li>sort (List )</li>
+<li>sort (List&#xFF0C;Comparator )</li>
+<li>swap (List&#xFF0C;int&#xFF0C; int )</li>
+</ul>
+<h3 id="92-search-and-replace">9.2 Search and Replace</h3>
+<ul>
+<li>Object max (Collection )</li>
+<li>Object max (Collection&#xFF0C;Comparator )</li>
+<li>Object min (Collection )</li>
+<li>Object min (Collection&#xFF0C;Comparator )</li>
+<li>int frequency (Collection&#xFF0C;Object )</li>
+<li>boolean replaceAll (List list&#xFF0C;Object oldVal&#xFF0C;Object newVal )</li>
+</ul>
+<h3 id="93-synchronized-methods">9.3 Synchronized Methods</h3>
+<pre><code>Collections.synchronizedCollection(Collection&lt;T&gt; c)
+Collections.synchronizedList(List&lt;T&gt; c)
+Collections.synchronizedSet(Set&lt;T&gt; c)
+Collections.synchronizedSortedSet(SortedSet&lt;T&gt; c)
+Collections.synchronizedMap(Map&lt;T&gt; c)
+Collections.synchronizedSortedMap(SortedMap&lt;T&gt; c)
+</code></pre><h3 id="94-algorithms">9.4 Algorithms</h3>
+<p>The polymorphic algorithms described here are pieces of reusable functionality provided by the Java platform. All of them come 
+from the Collections class, and all take the form of static methods whose first argument is the collection on which the operation 
+is to be performed. The great majority of the algorithms provided by the Java platform operate on List instances, but a few of 
+them operate on arbitrary Collection instances. This section briefly describes the following algorithms:</p>
+<ul>
+<li>Sorting</li>
+<li>Shuffling</li>
+<li>Routine Data Manipulation</li>
+<li>Searching</li>
+<li>Composition</li>
+<li>Finding Extreme Values</li>
+</ul>
+<p><strong>Sorting</strong></p>
+<p>The sort algorithm reorders a List so that its elements are in ascending order according to an ordering relationship.</p>
+<pre><code>* sort (List )
+* sort (List&#xFF0C;Comparator )
+</code></pre><p>The sort operation uses a slightly optimized <strong>merge sort</strong> algorithm that is fast and stable:</p>
+<ul>
+<li><strong>Fast</strong>: It is guaranteed to run in <code>nlog(n)</code> time and runs substantially faster on nearly sorted lists. Empirical tests showed 
+it to be as fast as a highly optimized quicksort. A quicksort is generally considered to be faster than a merge sort but isn&apos;t stable 
+and doesn&apos;t guarantee <code>nlog(n)</code> performance.</li>
+<li><strong>Stable</strong>: It doesn&apos;t reorder equal elements. This is important if you sort the same list repeatedly on different attributes. 
+If a user of a mail program sorts the inbox by mailing date and then sorts it by sender, the user naturally expects 
+that the now-contiguous list of messages from a given sender will  (still ) be sorted by mailing date. 
+This is guaranteed only if the second sort was stable.</li>
+<li><strong>Quicksort</strong> can be used to primitive type data which does not have stable issue.</li>
+</ul>
+<p>The following trivial program prints out its arguments in lexicographic  (alphabetical ) order.</p>
+<pre><code class="lang-java">public class Sort {
+    public static void main(String[] args) {
+        List&lt;String&gt; list = Arrays.asList(args);
+        Collections.sort(list);
+        System.out.println(list);
+    }
+}
+</code></pre>
+<p>Let&apos;s run the program.</p>
+<pre><code>% java Sort i walk the line
+</code></pre><p>The following output is produced:</p>
+<pre><code>[i, line, the, walk]
+</code></pre><p>The second form of sort takes a <code>Comparator</code> in addition to a List and sorts the elements with the Comparator.</p>
+<p>Recall that the anagram groups are stored as values in a Map, in the form of List instances. The revised printing code iterates through 
+the Map&apos;s values view, putting every List that passes the minimum-size test into a List of Lists. Then the code sorts this List, using a 
+Comparator that expects List instances, and implements reverse size-ordering. Finally, the code iterates through the sorted List, 
+printing its elements  (the anagram groups ). The following code replaces the printing code at the end of the main method in the Anagrams example.</p>
+<pre><code>// Make a List of all anagram groups above size threshold.
+List&lt;List&lt;String&gt;&gt; winners = new ArrayList&lt;List&lt;String&gt;&gt;();
+for (List&lt;String&gt; l : m.values())
+if (l.size() &gt;= minGroupSize)
+winners.add(l);
+
+// Sort anagram groups according to size
+Collections.sort(winners, new Comparator&lt;List&lt;String&gt;&gt;() {
+public int compare(List&lt;String&gt; o1, List&lt;String&gt; o2) {
+return o2.size() - o1.size();
+}});
+
+// Print anagram groups.
+for (List&lt;String&gt; l : winners)
+System.out.println(l.size() + &quot;: &quot; + l);
+</code></pre><p>Running the program on the same dictionary as in The Map Interface section, with the same minimum anagram group size  (eight ), 
+produces the following output.</p>
+<pre><code>12: [apers, apres, asper, pares, parse, pears, prase, presa, rapes, reaps, spare, spear]
+11: [alerts, alters, artels, estral, laster, ratels,salter, slater, staler, stelar, talers]
+10: [least, setal, slate, stale, steal, stela, taels,tales, teals, tesla]
+9: [estrin, inerts, insert, inters, niters, nitres, sinter, triens, trines]
+9: [capers, crapes, escarp, pacers, parsec, recaps,scrape, secpar, spacer]
+9: [palest, palets, pastel, petals, plates, pleats,septal, staple, tepals]
+9: [anestri, antsier, nastier, ratines, retains, retinas,retsina, stainer, stearin]
+8: [lapse, leaps, pales, peals, pleas, salep, sepal, spale]
+8: [aspers, parses, passer, prases, repass, spares,sparse, spears]
+8: [enters, nester, renest, rentes, resent, tenser,ternes,treens]
+8: [arles, earls, lares, laser, lears, rales, reals, seral]
+8: [earings, erasing, gainers, reagins, regains, reginas,searing, seringa]
+8: [peris, piers, pries, prise, ripes, speir, spier, spire]
+8: [ates, east, eats, etas, sate, seat, seta, teas]
+8: [carets, cartes, caster, caters, crates, reacts,recast,traces]
+</code></pre><p><strong>Shuffling</strong></p>
+<p>The shuffle algorithm does the opposite of what sort does, destroying any trace of order that may have been present in a List. 
+That is, this algorithm reorders the List based on input from a source of randomness such that all possible permutations occur 
+with equal likelihood, assuming a fair source of randomness. This algorithm is useful in implementing games of chance. 
+For example, it could be used to shuffle a List of Card objects representing a deck. Also, it&apos;s useful for generating test cases.</p>
+<p>This operation has two forms: one takes a List and uses a default source of randomness, and the other requires the caller to provide a 
+Random object to use as a source of randomness. The code for this algorithm is used as an example in the List section.</p>
+<p><strong>Routine Data Manipulation</strong>
+The Collections class provides five algorithms for doing routine data manipulation on List objects, all of which are pretty straightforward:</p>
+<ul>
+<li>reverse &#x2014; reverses the order of the elements in a List.</li>
+<li>fill &#x2014; overwrites every element in a List with the specified value. This operation is useful for reinitializing a List.</li>
+<li>copy &#x2014; takes two arguments, a destination List and a source List, and copies the elements of the source into the destination, overwriting its contents. The destination List must be at least as long as the source. If it is longer, the remaining elements in the destination List are unaffected.</li>
+<li>swap &#x2014; swaps the elements at the specified positions in a List.</li>
+<li>addAll &#x2014; adds all the specified elements to a Collection. The elements to be added may be specified individually or as an array.</li>
+</ul>
+<p><strong>Searching</strong>
+The binarySearch algorithm searches for a specified element in a sorted List. This algorithm has two forms.</p>
+<ul>
+<li>Collections.binarySearch (list, key )</li>
+<li>Collections.binarySearch (list, key, comparator )</li>
+</ul>
+<p>The return value is the same for both forms.</p>
+<ul>
+<li>If the List contains the search key, its index is returned.</li>
+<li>If not, the return value is  (- (insertion point ) - 1 ), where the insertion point is the point at which the value would be 
+inserted into the List, or the index of the first element greater than the value or <code>list.size()</code> if all elements in the List are 
+less than the specified value. This admittedly ugly formula guarantees that the return value will be &gt;= 0 if and only if 
+the search key is found. It&apos;s basically a hack to combine a boolean  (found ) and an integer  (index ) into a single int return value.</li>
+</ul>
+<p>The following idiom, usable with both forms of the binarySearch operation, looks for the specified search key and inserts it at 
+the appropriate position if it&apos;s not already present.</p>
+<pre><code>int pos = Collections.binarySearch(list, key);
+if (pos &lt; 0) {
+ l.add(-pos-1, key);
+}
+</code></pre><p><strong>Composition</strong></p>
+<p>The frequency and disjoint algorithms test some aspect of the composition of one or more Collections:</p>
+<ul>
+<li>frequency &#x2014; counts the number of times the specified element occurs in the specified collection</li>
+<li>disjoint &#x2014; determines whether two Collections are disjoint; that is, whether they contain no elements in common</li>
+</ul>
+<p><strong>Finding Extreme Values</strong></p>
+<p>The min and the max algorithms return, respectively, the minimum and maximum element contained in a specified Collection. 
+Both of these operations come in two forms. The simple form takes only a Collection and returns the minimum  (or maximum ) 
+element according to the elements&apos; natural ordering. The second form takes a Comparator in addition to the Collection and 
+returns the minimum  (or maximum ) element according to the specified Comparator.</p>
+<h2 id="10-custom-collection-implementations">10. Custom Collection Implementations</h2>
+<p><strong>Reasons to Write an Implementation</strong></p>
+<ul>
+<li>Persistent</li>
+<li>Application-specific</li>
+<li>High-performance, special-purpose</li>
+<li>High-performance, general-purpose</li>
+<li>Enhanced functionality</li>
+<li>Convenience</li>
+<li>Adapter</li>
+</ul>
+<p><strong>How to Write a Custom Implementation</strong></p>
+<p>The Java Collections Framework provides abstract implementations designed expressly to facilitate custom implementations.</p>
+<pre><code>public static &lt;T&gt; List&lt;T&gt; asList(T[] a) {
+    return new MyArrayList&lt;T&gt;(a);
+}
+
+private static class MyArrayList&lt;T&gt; extends AbstractList&lt;T&gt; {
+    private final T[] a;
+    MyArrayList(T[] array) {
+    a = array;
+}
+
+public T get(int index) {
+    return a[index];
+}
+
+public T set(int index, T element) {
+    T oldValue = a[index];
+    a[index] = element;
+    return oldValue;
+}
+
+public int size() {
+    return a.length;
+}
+}
+</code></pre><p>Believe it or not, this is very close to the implementation that is contained in <code>java.util.Arrays</code>. It&apos;s that simple! 
+You provide a constructor and the get, set, and size methods, and AbstractList does all the rest. You get the ListIterator, 
+bulk operations, search operations, hash code computation, comparison, and string representation for free.</p>
+<p>Suppose you want to make the implementation a bit faster. The API documentation for abstract implementations describes 
+precisely how each method is implemented, so you&apos;ll know which methods to override to get the performance you want. 
+The preceding implementation&apos;s performance is fine, but it can be improved a bit. In particular, the toArray method 
+iterates over the List, copying one element at a time. Given the internal representation, it&apos;s a lot faster and 
+more sensible just to clone the array.</p>
+<pre><code>public Object[] toArray() {
+    return (Object[]) a.clone();
+}
+</code></pre><p>With the addition of this override and a few more like it, this implementation is exactly the one found in <code>java.util.Arrays</code>. 
+In the interest of full disclosure, it&apos;s a bit tougher to use the other abstract implementations because you will have to 
+write your own iterator, but it&apos;s still not that difficult.</p>
+<p>The following list summarizes the abstract implementations:</p>
+<ul>
+<li>AbstractCollection &#x2014; a Collection that is neither a Set nor a List. At a minimum, you must provide the iterator 
+and the size methods.</li>
+<li>AbstractSet &#x2014; a Set; use is identical to AbstractCollection.</li>
+<li>AbstractList &#x2014; a List backed up by a random-access data store, such as an array. At a minimum, you must provide 
+the positional access methods  (get and, optionally, set, remove, and add ) and the size method. The abstract class 
+takes care of listIterator  (and iterator ).</li>
+<li>AbstractSequentialList &#x2014; a List backed up by a sequential-access data store, such as a linked list. At a minimum, 
+you must provide the listIterator and size methods. The abstract class takes care of the positional access methods.<br>(This is the opposite of AbstractList. )</li>
+<li>AbstractQueue &#x2014; at a minimum, you must provide the offer, peek, poll, and size methods and an iterator supporting remove.</li>
+<li>AbstractMap &#x2014; a Map. At a minimum you must provide the entrySet view. This is typically implemented with the 
+AbstractSet class. If the Map is modifiable, you must also provide the put method.</li>
+</ul>
+<p>The process of writing a custom implementation follows:</p>
+<ul>
+<li>Choose the appropriate abstract implementation class from the preceding list.</li>
+<li>Provide implementations for all the abstract methods of the class. If your custom collection is to be modifiable, 
+you will have to override one or more of the concrete methods as well. The API documentation for the abstract 
+implementation class will tell you which methods to override.</li>
+<li>Test and, if necessary, debug the implementation. You now have a working custom collection implementation.</li>
+<li>If you are concerned about performance, read the API documentation of the abstract implementation class for 
+all the methods whose implementations you&apos;re inheriting. If any seem too slow, override them. If you override any methods, be sure to measure the performance of the method before and after the override. How much effort you put into tweaking performance should be a function of how much use the implementation will get and how critical to performance its use is.  (Often this step is best omitted. )</li>
+</ul>
+<h2 id="11-interoperability">11. Interoperability</h2>
+<ul>
+<li><strong>Compatibility</strong>: This subsection describes how collections can be made to work with older APIs that predate 
+the addition of Collections to the Java platform.</li>
+<li><strong>API Design</strong>: This subsection describes how to design new APIs so that they will interoperate seamlessly with one another.</li>
+</ul>
+<h3 id="111-compatibility">11.1 Compatibility</h3>
+<p>The Java Collections Framework was designed to ensure complete interoperability between the core collection 
+interfaces and the types that were used to represent collections in the early versions of the Java platform: 
+Vector, Hashtable, array, and Enumeration. In this section, you&apos;ll learn how to transform old collections to the 
+Java Collections Framework collections and vice versa.</p>
+<p><strong>Upward Compatibility</strong></p>
+<p>Suppose that you&apos;re using an API that returns legacy collections in tandem with another API that requires objects implementing 
+the collection interfaces. To make the two APIs interoperate smoothly, you&apos;ll have to transform the legacy collections into 
+modern collections. Luckily, the Java Collections Framework makes this easy.</p>
+<p>Suppose the old API returns an array of objects and the new API requires a Collection. The Collections Framework has a 
+convenience implementation that allows an array of objects to be viewed as a List. You use Arrays.asList to pass an array 
+to any method requiring a Collection or a List.</p>
+<pre><code>Foo[] result = oldMethod(arg);
+newMethod(Arrays.asList(result));
+</code></pre><p>If the old API returns a Vector or a Hashtable, you have no work to do at all because Vector was retrofitted to implement 
+the List interface, and Hashtable was retrofitted to implement Map. Therefore, a Vector may be passed directly to any method 
+calling for a Collection or a List.</p>
+<pre><code>Vector result = oldMethod(arg);
+newMethod(result);
+</code></pre><p>Similarly, a Hashtable may be passed directly to any method calling for a Map.</p>
+<pre><code>Hashtable result = oldMethod(arg);
+newMethod(result);
+</code></pre><p>Less frequently, an API may return an Enumeration that represents a collection of objects. The Collections.list method 
+translates an Enumeration into a Collection.</p>
+<pre><code>Enumeration e = oldMethod(arg);
+newMethod(Collections.list(e));
+</code></pre><p><strong>Backward Compatibility</strong></p>
+<p>Suppose you&apos;re using an API that returns modern collections in tandem with another API that requires you to pass in legacy 
+collections. To make the two APIs interoperate smoothly, you have to transform modern collections into old collections. 
+Again, the Java Collections Framework makes this easy.</p>
+<p>Suppose the new API returns a Collection, and the old API requires an array of Object. As you&apos;re probably aware, the 
+Collection interface contains a toArray method designed expressly for this situation.</p>
+<pre><code>Collection c = newMethod();
+oldMethod(c.toArray());
+</code></pre><p>What if the old API requires an array of String  (or another type ) instead of an array of Object? You just use 
+the other form of toArray &#x2014; the one that takes an array on input.</p>
+<pre><code>Collection c = newMethod();
+oldMethod((String[]) c.toArray(new String[0]));
+</code></pre><p>If the old API requires a Vector, the standard collection constructor comes in handy.</p>
+<pre><code>Collection c = newMethod();
+oldMethod(new Vector(c));
+</code></pre><p>The case where the old API requires a Hashtable is handled analogously.</p>
+<pre><code>Map m = newMethod();
+oldMethod(new Hashtable(m));
+</code></pre><p>Finally, what do you do if the old API requires an Enumeration? This case isn&apos;t common, but it does happen from time 
+to time, and the Collections.enumeration method was provided to handle it. This is a static factory method that takes a 
+Collection and returns an Enumeration over the elements of the Collection.</p>
+<pre><code>Collection c = newMethod();
+oldMethod(Collections.enumeration(c));
+</code></pre><h3 id="112-api-design">11.2 API Design</h3>
+<p>In this short but important section, you&apos;ll learn a few simple guidelines that will allow your API to interoperate 
+seamlessly with all other APIs that follow these guidelines. In essence, these rules define what it takes to be a 
+good &quot;citizen&quot; in the world of collections.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><p>If your API contains a method that requires a collection on input, it is of paramount importance that you declare the 
+relevant parameter type to be one of the collection interface types. Never use an implementation type because this defeats 
+the purpose of an interface-based Collections Framework, which is to allow collections to be manipulated without regard 
+to implementation details.</p>
+</li>
+<li><p>Further, you should always use the least-specific type that makes sense. For example, don&apos;t require a List or a 
+Set if a Collection would do. It&apos;s not that you should never require a List or a Set on input; it is correct to do 
+so if a method depends on a property of one of these interfaces. For example, many of the algorithms provided by 
+the Java platform require a List on input because they depend on the fact that lists are ordered. As a general rule, 
+however, the best types to use on input are the most general: Collection and Map.</p>
+</li>
+<li><p><strong>Caution</strong>: Never define your own ad hoc collection class and require objects of this class on input. 
+By doing this, you&apos;d lose all the benefits provided by the Java Collections Framework.</p>
+</li>
+</ul>
+<p><strong>Return Values</strong></p>
+<ul>
+<li><p>You can afford to be much more flexible with return values than with input parameters. It&apos;s fine to return an 
+object of any type that implements or extends one of the collection interfaces. This can be one of the interfaces or 
+a special-purpose type that extends or implements one of these interfaces.</p>
+</li>
+<li><p>For example, one could imagine an image-processing package, called ImageList, that returned objects of a new class 
+that implements List. In addition to the List operations, ImageList could support any application-specific operations 
+that seemed desirable. For example, it might provide an indexImage operation that returned an image containing thumbnail 
+images of each graphic in the ImageList. It&apos;s critical to note that even if the API furnishes ImageList instances on output, 
+it should accept arbitrary Collection  (or perhaps List ) instances on input.</p>
+</li>
+<li><p>In one sense, return values should have the opposite behavior of input parameters: It&apos;s best to return the most 
+specific applicable collection interface rather than the most general. For example, if you&apos;re sure that you&apos;ll 
+always return a SortedMap, you should give the relevant method the return type of SortedMap rather than Map. 
+SortedMap instances are more time-consuming to build than ordinary Map instances and are also more powerful. 
+Given that your module has already invested the time to build a SortedMap, it makes good sense to give the user 
+access to its increased power. Furthermore, the user will be able to pass the returned object to methods that demand 
+a SortedMap, as well as those that accept any Map.</p>
+</li>
+</ul>
+<p><strong>Legacy APIs</strong></p>
+<p>There are currently plenty of APIs out there that define their own ad hoc collection types. While this is unfortunate, 
+it&apos;s a fact of life, given that there was no Collections Framework in the first two major releases of the Java platform. 
+Suppose you own one of these APIs; here&apos;s what you can do about it.</p>
+<ul>
+<li><p>If possible, retrofit your legacy collection type to implement one of the standard collection interfaces. 
+Then all the collections you return will interoperate smoothly with other collection-based APIs. If this is impossible<br>(for example, because one or more of the preexisting type signatures conflict with the standard collection interfaces ), 
+define an adapter class that wraps one of your legacy collections objects, allowing it to function as a standard collection.<br>(The Adapter class is an example of a custom implementation. )</p>
+</li>
+<li><p>Retrofit your API with new calls that follow the input guidelines to accept objects of a standard collection interface, 
+if possible. Such calls can coexist with the calls that take the legacy collection type. If this is impossible, 
+provide a constructor or static factory for your legacy type that takes an object of one of the standard interfaces 
+and returns a legacy collection containing the same elements  (or mappings ). Either of these approaches will 
+allow users to pass arbitrary collections into your API.</p>
+</li>
+</ul>
+<h2 id="12-summary">12. Summary</h2>
+<ul>
+<li><p>Array type collection&#xFF1A;read fast.</p>
+</li>
+<li><p>List type collection&#xFF1A;add and delete fast&#xFF0C;keep insert order.</p>
+</li>
+<li><p>Hash type collection: override hashcode and equals to maintain uniqueness.</p>
+</li>
+<li><p>Tree type collection&#xFF1A;can be sorted by Comparable or Comparator.</p>
+</li>
+<li><p>All collection type are un-synchronized except these three are synchronized Hashtable  (not from collection ), Vector, Stack. 
+To make a collection synchronized:</p>
+</li>
+</ul>
+<pre><code>Collections.synchronizedCollection(Collection&lt;T&gt; c)
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter03_exception.html" class="navigation navigation-prev " aria-label="Previous page: Exception">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter05_generics.html" class="navigation navigation-next " aria-label="Next page: Generics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+<<<<<<< HEAD:_book/java-quick-review/chapter04_collections.html
+            gitbook.page.hasChanged({"page":{"title":"Collections","level":"2.4","depth":1,"next":{"title":"Generics","level":"2.5","depth":1,"path":"java-quick-review/chapter05_generics.md","ref":"java-quick-review/chapter05_generics.md","articles":[]},"previous":{"title":"Exception","level":"2.3","depth":1,"path":"java-quick-review/chapter03_exception.md","ref":"java-quick-review/chapter03_exception.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java-quick-review/chapter04_collections.md","mtime":"2020-12-20T13:04:36.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T13:40:29.986Z"},"basePath":"..","book":{"language":""}});
+=======
+            gitbook.page.hasChanged({"page":{"title":"Collections","level":"2.1.4","depth":2,"next":{"title":"Generics","level":"2.1.5","depth":2,"path":"java-quick-review/contents/chapter05_generics.md","ref":"java-quick-review/contents/chapter05_generics.md","articles":[]},"previous":{"title":"Exception","level":"2.1.3","depth":2,"path":"java-quick-review/contents/chapter03_exception.md","ref":"java-quick-review/contents/chapter03_exception.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"java-quick-review/contents/chapter04_collections.md","mtime":"2020-12-20T14:46:19.098Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T20:18:59.091Z"},"basePath":"../..","book":{"language":""}});
+>>>>>>> main:_book/java-quick-review/contents/chapter04_collections.html
+        });
+    </script>
+</div>
+
+        
+<<<<<<< HEAD:_book/java-quick-review/chapter04_collections.html
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+=======
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+>>>>>>> main:_book/java-quick-review/contents/chapter04_collections.html
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

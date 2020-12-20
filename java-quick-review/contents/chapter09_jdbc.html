@@ -1,0 +1,663 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JDBC · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shubo Zhang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter10_lambda-expressions.html" />
+    
+    
+    <link rel="prev" href="chapter08_concurrency.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../intro.html">
+            
+                <a href="../intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter01_syntax.html">
+            
+                <a href="chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter02_oo_concepts.html">
+            
+                <a href="chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="chapter03_exception.html">
+            
+                <a href="chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="chapter04_collections.html">
+            
+                <a href="chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter05_generics.html">
+            
+                <a href="chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter06_reflection.html">
+            
+                <a href="chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="chapter07_io.html">
+            
+                <a href="chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="chapter08_concurrency.html">
+            
+                <a href="chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.9" data-path="chapter09_jdbc.html">
+            
+                <a href="chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="chapter10_lambda-expressions.html">
+            
+                <a href="chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="chapter11_aggregate-operations.html">
+            
+                <a href="chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="appendix-i_HashMap.html">
+            
+                <a href="appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="unit-testing.html">
+            
+                <a href="unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="best_practices_in_implementation.html">
+            
+                <a href="best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="interview_questions.html">
+            
+                <a href="interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="code_tips.html">
+            
+                <a href="code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Notes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../notes/git-commands.html">
+            
+                <a href="../../notes/git-commands.html">
+            
+                    
+                    git commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../notes/git-quick-training.html">
+            
+                <a href="../../notes/git-quick-training.html">
+            
+                    
+                    git quick training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../notes/cmd-commands.html">
+            
+                <a href="../../notes/cmd-commands.html">
+            
+                    
+                    cmd commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JDBC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <p>#
+JDBC: Java Database Conncetion</p>
+<h2 id="1-processing-sql-statements-with-jdbc">1. Processing SQL Statements with JDBC</h2>
+<p>In general, to process any SQL statement with JDBC, you follow these steps:</p>
+<ul>
+<li>Establishing a connection.</li>
+<li>Create a statement.</li>
+<li>Execute the query.</li>
+<li>Process the ResultSet object.</li>
+<li>Close the connection.
+This page uses the following method, CoffeesTables.viewTable, from the tutorial sample to demonstrate these steps. This method outputs the contents of the table COFFEES. This method will be discussed in more detail later in this tutorial:</li>
+</ul>
+<pre><code class="lang-java">public static void viewTable(Connection con, String dbName) throws SQLException {
+Statement stmt = null;
+String query = &quot;select COF_NAME, SUP_ID, PRICE, &quot; +
+&quot;SALES, TOTAL &quot; +
+&quot;from &quot; + dbName + &quot;.COFFEES&quot;;
+try {
+stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery(query);
+while (rs.next()) {
+String coffeeName = rs.getString(&quot;COF_NAME&quot;);
+int supplierID = rs.getInt(&quot;SUP_ID&quot;);
+float price = rs.getFloat(&quot;PRICE&quot;);
+int sales = rs.getInt(&quot;SALES&quot;);
+int total = rs.getInt(&quot;TOTAL&quot;);
+System.out.println(coffeeName + &quot;\t&quot; + supplierID +
+&quot;\t&quot; + price + &quot;\t&quot; + sales +
+&quot;\t&quot; + total);
+}
+} catch (SQLException e ) {
+JDBCTutorialUtilities.printSQLException(e);
+} finally {
+if (stmt != null) { stmt.close(); }
+}
+}
+</code></pre>
+<p><strong>Establishing Connections</strong>
+First, establish a connection with the data source you want to use. A data source can be a DBMS, a legacy file system, or some other source of data with a corresponding JDBC driver. This connection is represented by a Connection object.</p>
+<pre><code class="lang-java">public Connection getConnection() throws SQLException {
+Connection conn = null;
+Properties connectionProps = new Properties();
+connectionProps.put(&quot;user&quot;, this.userName);
+connectionProps.put(&quot;password&quot;, this.password);
+
+if (this.dbms.equals(&quot;mysql&quot;)) {
+conn = DriverManager.getConnection(
+&quot;jdbc:&quot; + this.dbms + &quot;://&quot; +
+this.serverName +
+&quot;:&quot; + this.portNumber + &quot;/&quot;,
+connectionProps);
+} else if (this.dbms.equals(&quot;derby&quot;)) {
+conn = DriverManager.getConnection(
+&quot;jdbc:&quot; + this.dbms + &quot;:&quot; +
+this.dbName +
+&quot;;create=true&quot;,
+connectionProps);
+}
+System.out.println(&quot;Connected to database&quot;);
+return conn;
+}
+</code></pre>
+<p><strong>Creating Statements</strong>
+A Statement is an interface that represents a SQL statement. You execute Statement objects, and they generate ResultSet objects, which is a table of data representing a database result set. You need a Connection object to create a Statement object.</p>
+<p>For example, CoffeesTables.viewTable creates a Statement object with the following code:</p>
+<pre><code class="lang-java">stmt = con.createStatement();
+</code></pre>
+<p>There are three different kinds of statements:</p>
+<ul>
+<li>Statement: Used to implement simple SQL statements with <strong>no parameters</strong>.</li>
+<li>PreparedStatement: (Extends Statement.) Used for precompiling SQL statements that might contain <strong>input parameters</strong>.</li>
+<li>CallableStatement: (Extends PreparedStatement.) Used to execute stored procedures that may contain <strong>both input and output parameters</strong>.
+<strong>Executing Queries</strong>
+To execute a query, call an execute method from Statement such as the following:</li>
+<li>execute: Returns true if the first object that the query returns is a ResultSet object. Use this method if the query could return one or more ResultSet objects. Retrieve the ResultSet objects returned from the query by repeatedly calling Statement.getResultSet.</li>
+<li>executeQuery: Returns one ResultSet object.</li>
+<li>executeUpdate: Returns an integer representing the number of rows affected by the SQL statement. Use this method if you are using INSERT, DELETE, or UPDATE SQL statements.</li>
+</ul>
+<p>For example, CoffeesTables.viewTable executed a Statement object with the following code:</p>
+<pre><code class="lang-java">ResultSet rs = stmt.executeQuery(query);
+</code></pre>
+<p><strong>Processing ResultSet Objects</strong>
+You access the data in a ResultSet object through a cursor. Note that this cursor is not a database cursor. This cursor is a pointer that points to one row of data in the ResultSet object. Initially, the cursor is positioned before the first row. You call various methods defined in the ResultSet object to move the cursor.</p>
+<p>For example, CoffeesTables.viewTable repeatedly calls the method ResultSet.next to move the cursor forward by one row. Every time it calls next, the method outputs the data in the row where the cursor is currently positioned:</p>
+<pre><code class="lang-java">try {
+stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery(query);
+while (rs.next()) {
+String coffeeName = rs.getString(&quot;COF_NAME&quot;);
+int supplierID = rs.getInt(&quot;SUP_ID&quot;);
+float price = rs.getFloat(&quot;PRICE&quot;);
+int sales = rs.getInt(&quot;SALES&quot;);
+int total = rs.getInt(&quot;TOTAL&quot;);
+System.out.println(coffeeName + &quot;\t&quot; + supplierID +
+&quot;\t&quot; + price + &quot;\t&quot; + sales +
+&quot;\t&quot; + total);
+}
+}
+</code></pre>
+<p><strong>Closing Connections</strong>
+When you are finished using a Statement, call the method Statement.close to immediately release the resources it is using. When you call this method, its ResultSet objects are closed.</p>
+<p>For example, the method CoffeesTables.viewTable ensures that the Statement object is closed at the end of the method, regardless of any SQLException objects thrown, by wrapping it in a finally block:</p>
+<pre><code class="lang-java">} finally {
+if (stmt != null) { stmt.close(); }
+}
+</code></pre>
+<p>JDBC throws an SQLException when it encounters an error during an interaction with a data source. See Handling SQL Exceptions for more information.</p>
+<p>In JDBC 4.1, which is available in Java SE release 7 and later, you can use a try-with-resources statement to automatically close Connection, Statement, and ResultSet objects, regardless of whether an SQLException has been thrown. An automatic resource statement consists of a try statement and one or more declared resources. For example, you can modify CoffeesTables.viewTable so that its Statement object closes automatically, as follows:</p>
+<pre><code class="lang-java">public static void viewTable(Connection con) throws SQLException {
+
+String query = &quot;select COF_NAME, SUP_ID, PRICE, &quot; +
+&quot;SALES, TOTAL &quot; +
+&quot;from COFFEES&quot;;
+
+try (Statement stmt = con.createStatement()) {
+
+ResultSet rs = stmt.executeQuery(query);
+
+while (rs.next()) {
+String coffeeName = rs.getString(&quot;COF_NAME&quot;);
+int supplierID = rs.getInt(&quot;SUP_ID&quot;);
+float price = rs.getFloat(&quot;PRICE&quot;);
+int sales = rs.getInt(&quot;SALES&quot;);
+int total = rs.getInt(&quot;TOTAL&quot;);
+System.out.println(coffeeName + &quot;, &quot; + supplierID +
+&quot;, &quot; + price + &quot;, &quot; + sales +
+&quot;, &quot; + total);
+}
+} catch (SQLException e) {
+JDBCTutorialUtilities.printSQLException(e);
+}
+}
+</code></pre>
+<p>The following statement is an try-with-resources statement, which declares one resource, stmt, that will be automatically closed when the try block terminates:</p>
+<pre><code class="lang-java">try (Statement stmt = con.createStatement()) {
+// ...
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter08_concurrency.html" class="navigation navigation-prev " aria-label="Previous page: Concurrency">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter10_lambda-expressions.html" class="navigation navigation-next " aria-label="Next page: Lambda">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+<<<<<<< HEAD:_book/java-quick-review/chapter09_jdbc.html
+            gitbook.page.hasChanged({"page":{"title":"JDBC","level":"2.9","depth":1,"next":{"title":"Lambda","level":"2.10","depth":1,"path":"java-quick-review/chapter10_lambda-expressions.md","ref":"java-quick-review/chapter10_lambda-expressions.md","articles":[]},"previous":{"title":"Concurrency","level":"2.8","depth":1,"path":"java-quick-review/chapter08_concurrency.md","ref":"java-quick-review/chapter08_concurrency.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java-quick-review/chapter09_jdbc.md","mtime":"2020-12-20T13:04:36.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T13:40:29.986Z"},"basePath":"..","book":{"language":""}});
+=======
+            gitbook.page.hasChanged({"page":{"title":"JDBC","level":"2.1.9","depth":2,"next":{"title":"Lambda","level":"2.1.10","depth":2,"path":"java-quick-review/contents/chapter10_lambda-expressions.md","ref":"java-quick-review/contents/chapter10_lambda-expressions.md","articles":[]},"previous":{"title":"Concurrency","level":"2.1.8","depth":2,"path":"java-quick-review/contents/chapter08_concurrency.md","ref":"java-quick-review/contents/chapter08_concurrency.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"java-quick-review/contents/chapter09_jdbc.md","mtime":"2020-12-20T13:04:36.784Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T20:18:59.091Z"},"basePath":"../..","book":{"language":""}});
+>>>>>>> main:_book/java-quick-review/contents/chapter09_jdbc.html
+        });
+    </script>
+</div>
+
+        
+<<<<<<< HEAD:_book/java-quick-review/chapter09_jdbc.html
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+=======
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+>>>>>>> main:_book/java-quick-review/contents/chapter09_jdbc.html
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
