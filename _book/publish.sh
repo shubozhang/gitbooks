@@ -1,8 +1,12 @@
 # install the plugins and build the static site
 gitbook install && gitbook build --config=book.json
 
+git add -A;git commit -m 'updated docs';
+
 # checkout to the gh-pages branch
 git checkout gh-pages
+
+git merge main
 
 # pull the latest updates
 git pull origin gh-pages --rebase
