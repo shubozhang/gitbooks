@@ -1,0 +1,842 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lambda · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter11_aggregate-operations.html" />
+    
+    
+    <link rel="prev" href="chapter09_jdbc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter01_syntax.html">
+            
+                <a href="chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter02_oo_concepts.html">
+            
+                <a href="chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter03_exception.html">
+            
+                <a href="chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="chapter04_collections.html">
+            
+                <a href="chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="chapter05_generics.html">
+            
+                <a href="chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="chapter06_reflection.html">
+            
+                <a href="chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="chapter07_io.html">
+            
+                <a href="chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="chapter08_concurrency.html">
+            
+                <a href="chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="chapter09_jdbc.html">
+            
+                <a href="chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.10" data-path="chapter10_lambda-expressions.html">
+            
+                <a href="chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="chapter11_aggregate-operations.html">
+            
+                <a href="chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="appendix-i_HashMap.html">
+            
+                <a href="appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="unit-testing.html">
+            
+                <a href="unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="best_practices_in_implementation.html">
+            
+                <a href="best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="interview_questions.html">
+            
+                <a href="interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="code_tips.html">
+            
+                <a href="code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lambda</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>#
+Lambda Expressions</p>
+<ul>
+<li>Ideal Use Case for Lambda Expressions</li>
+<li>Approach 1: Create Methods That Search for Members That Match One Characteristic</li>
+<li>Approach 2: Create More Generalized Search Methods</li>
+<li>Approach 3: Specify Search Criteria Code in a Local Class</li>
+<li>Approach 4: Specify Search Criteria Code in an Anonymous Class</li>
+<li>Approach 5: Specify Search Criteria Code with a Lambda Expression</li>
+<li>Approach 6: Use Standard Functional Interfaces with Lambda Expressions</li>
+<li>Approach 7: Use Lambda Expressions Throughout Your Application</li>
+<li>Approach 8: Use Generics More Extensively</li>
+<li>Approach 9: Use Aggregate Operations That Accept Lambda Expressions as Parameters</li>
+</ul>
+<ul>
+<li>Lambda Expressions in GUI Applications</li>
+<li>Syntax of Lambda Expressions</li>
+<li>Accessing Local Variables of the Enclosing Scope</li>
+<li>Target Typing</li>
+<li>Target Types and Method Arguments</li>
+<li>Serialization</li>
+</ul>
+<h2 id="1-ideal-use-case-for-lambda-expressions">1. Ideal Use Case for Lambda Expressions</h2>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Sex {
+MALE, FEMALE
+}
+String name;
+LocalDate birthday;
+Sex gender;
+String email;
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAge</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">// ...</span>
+}
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPerson</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">// ...</span>
+}
+}
+</code></pre>
+<h3 id="11-approach-1-create-methods-that-search-for-members-that-match-one-characteristic">1.1 Approach 1: Create Methods That Search for Members That Match One Characteristic</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPersonsOlderThan</span><span class="hljs-params">(List&lt;Person&gt; roster, <span class="hljs-keyword">int</span> age)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (p.getAge() &gt;= age) {
+p.printPerson();
+}
+}
+}
+</code></pre>
+<h3 id="12-approach-2-create-more-generalized-search-methods">1.2 Approach 2: Create More Generalized Search Methods</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPersonsWithinAgeRange</span><span class="hljs-params">(
+List&lt;Person&gt; roster, <span class="hljs-keyword">int</span> low, <span class="hljs-keyword">int</span> high)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (low &lt;= p.getAge() &amp;&amp; p.getAge() &lt; high) {
+p.printPerson();
+}
+}
+}
+</code></pre>
+<p>What if you want to print members of a specified sex, or a combination of a specified gender and age range? What if you decide to change the Person class and add other attributes such as relationship status or geographical location? Although this method is more generic than <code>printPersonsOlderThan</code>, trying to create a separate method for each possible search query can still lead to brittle code. You can instead separate the code that specifies the criteria for which you want to search in a different class.</p>
+<h3 id="13-approach-3-specify-search-criteria-code-in-a-local-class">1.3 Approach 3: Specify Search Criteria Code in a Local Class</h3>
+<p>The following method prints members that match search criteria that you specify:</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPersons</span><span class="hljs-params">(
+List&lt;Person&gt; roster, CheckPerson tester)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+p.printPerson();
+}
+}
+}
+</code></pre>
+<p>This method checks each Person instance contained in the List parameter roster whether it satisfies the search criteria specified in the CheckPerson parameter tester by invoking the method tester.test. If the method tester.test returns a true value, then the method printPersons is invoked on the Person instance.</p>
+<p>To specify the search criteria, you implement the CheckPerson interface:</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">CheckPerson</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Person p)</span></span>;
+}
+</code></pre>
+<p>The following class implements the CheckPerson interface by specifying an implementation for the method test. This method filters members that are eligible for Selective Service in the United States: it returns a true value if its Person parameter is male and between the ages of 18 and 25:</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckPersonEligibleForSelectiveService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">CheckPerson</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Person p)</span> </span>{
+<span class="hljs-keyword">return</span> p.gender == Person.Sex.MALE &amp;&amp;
+p.getAge() &gt;= <span class="hljs-number">18</span> &amp;&amp;
+p.getAge() &lt;= <span class="hljs-number">25</span>;
+}
+}
+</code></pre>
+<p>To use this class, you create a new instance of it and invoke the printPersons method:</p>
+<pre><code class="lang-java">printPersons(roster, <span class="hljs-keyword">new</span> CheckPersonEligibleForSelectiveService());
+</code></pre>
+<p>Although this approach is less brittle&#x2014;you don&apos;t have to rewrite methods if you change the structure of the Person&#x2014;you still have additional code: a new interface and a local class for each search you plan to perform in your application. Because <code>CheckPersonEligibleForSelectiveService</code> implements an interface, you can use an anonymous class instead of a local class and bypass the need to declare a new class for each search.</p>
+<h3 id="14-approach-4-specify-search-criteria-code-in-an-anonymous-class">1.4 Approach 4: Specify Search Criteria Code in an Anonymous Class</h3>
+<p>One of the arguments of the following invocation of the method printPersons is an anonymous class that filters members that are eligible for Selective Service in the United States: those who are male and between the ages of 18 and 25:</p>
+<pre><code class="lang-java">printPersons(
+roster,
+<span class="hljs-keyword">new</span> CheckPerson() {
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Person p)</span> </span>{
+<span class="hljs-keyword">return</span> p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>;
+}
+}
+);
+</code></pre>
+<p>This approach reduces the amount of code required because you don&apos;t have to create a new class for each search that you want to perform. However, the syntax of anonymous classes is bulky considering that the CheckPerson interface contains only one method. In this case, you can use a lambda expression instead of an anonymous class, as described in the next section.</p>
+<h3 id="15-approach-5-specify-search-criteria-code-with-a-lambda-expression">1.5 Approach 5: Specify Search Criteria Code with a Lambda Expression</h3>
+<p>The CheckPerson interface is a <code>functional interface</code>. A functional interface is any interface that contains only one abstract method. (A functional interface may contain one or more default methods or static methods.) Because a functional interface contains only one abstract method, you can omit the name of that method when you implement it. To do this, instead of using an anonymous class expression, you use a lambda expression, which is highlighted in the following method invocation:</p>
+<pre><code class="lang-java">printPersons(
+roster,
+(Person p) -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>
+);
+</code></pre>
+<p>You can use a standard functional interface in place of the interface CheckPerson, which reduces even further the amount of code required.</p>
+<h3 id="16-approach-6-use-standard-functional-interfaces-with-lambda-expressions">1.6 Approach 6: Use Standard Functional Interfaces with Lambda Expressions</h3>
+<p>Reconsider the CheckPerson interface:</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">CheckPerson</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Person p)</span></span>;
+}
+</code></pre>
+<p>This is a very simple interface. It&apos;s a <code>functional interface</code> because it contains only one abstract method. This method takes one parameter and returns a boolean value. The method is so simple that it might not be worth it to define one in your application. Consequently, the JDK defines several standard functional interfaces, which you can find in the package java.util.function.</p>
+<p>For example, you can use the Predicate<t> interface in place of CheckPerson. This interface contains the method boolean test(T t):</t></p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Predicate</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(T t)</span></span>;
+}
+</code></pre>
+<p>The interface Predicate<t> is an example of a generic interface. Generic types (such as generic interfaces) specify one or more type parameters within angle brackets (&lt;&gt;). This interface contains only one type parameter, T. When you declare or instantiate a generic type with actual type arguments, you have a parameterized type. For example, the parameterized type Predicate<person> is the following:</person></t></p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Predicate</span>&lt;<span class="hljs-title">Person</span>&gt; </span>{
+<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Person t)</span></span>;
+}
+</code></pre>
+<p>This parameterized type contains a method that has the same return type and parameters as CheckPerson.boolean test(Person p). Consequently, you can use Predicate<t> in place of CheckPerson as the following method demonstrates:</t></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPersonsWithPredicate</span><span class="hljs-params">(
+List&lt;Person&gt; roster, Predicate&lt;Person&gt; tester)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+p.printPerson();
+}
+}
+}
+</code></pre>
+<p>As a result, the following method invocation is the same as when you invoked printPersons in Approach 3: Specify Search Criteria Code in a Local Class to obtain members who are eligible for Selective Service:</p>
+<pre><code class="lang-java">printPersonsWithPredicate(
+roster,
+p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>
+);
+</code></pre>
+<p>This is not the only possible place in this method to use a lambda expression. The following approach suggests other ways to use lambda expressions.</p>
+<h3 id="17-approach-7-use-lambda-expressions-throughout-your-application">1.7 Approach 7: Use Lambda Expressions Throughout Your Application</h3>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printPersonsWithPredicate</span><span class="hljs-params">(
+List&lt;Person&gt; roster, Predicate&lt;Person&gt; tester)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+p.printPerson();
+}
+}
+}
+</code></pre>
+<p>This method checks each Person instance contained in the List parameter roster whether it satisfies the criteria specified in the Predicate parameter tester. If the Person instance does satisfy the criteria specified by tester, the method printPersron is invoked on the Person instance.</p>
+<p>Instead of invoking the method printPerson, you can specify a different action to perform on those Person instances that satisfy the criteria specified by tester. You can specify this action with a lambda expression. Suppose you want a lambda expression similar to printPerson, one that takes one argument (an object of type Person) and returns void. Remember, to use a lambda expression, you need to implement a functional interface. In this case, you need a functional interface that contains an abstract method that can take one argument of type Person and returns void. The Consumer<t> interface contains the method void accept(T t), which has these characteristics. The following method replaces the invocation p.printPerson() with an instance of Consumer<person> that invokes the method accept:</person></t></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">processPersons</span><span class="hljs-params">(
+List&lt;Person&gt; roster,
+Predicate&lt;Person&gt; tester,
+Consumer&lt;Person&gt; block)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+block.accept(p);
+}
+}
+}
+</code></pre>
+<p>As a result, the following method invocation is the same as when you invoked printPersons in Approach 3: Specify Search Criteria Code in a Local Class to obtain members who are eligible for Selective Service. The lambda expression used to print members is highlighted:</p>
+<pre><code class="lang-java">processPersons(
+roster,
+p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>,
+p -&gt; p.printPerson()
+);
+</code></pre>
+<p>What if you want to do more with your members&apos; profiles than printing them out. Suppose that you want to validate the members&apos; profiles or retrieve their contact information? In this case, you need a functional interface that contains an abstract method that returns a value. The Function<t,r> interface contains the method R apply(T t). The following method retrieves the data specified by the parameter mapper, and then performs an action on it specified by the parameter block:</t,r></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">processPersonsWithFunction</span><span class="hljs-params">(
+List&lt;Person&gt; roster,
+Predicate&lt;Person&gt; tester,
+Function&lt;Person, String&gt; mapper,
+Consumer&lt;String&gt; block)</span> </span>{
+<span class="hljs-keyword">for</span> (Person p : roster) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+String data = mapper.apply(p);
+block.accept(data);
+}
+}
+}
+</code></pre>
+<p>The following method retrieves the email address from each member contained in roster who is eligible for Selective Service and then prints it:</p>
+<pre><code class="lang-java">processPersonsWithFunction(
+roster,
+p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>,
+p -&gt; p.getEmailAddress(),
+email -&gt; System.out.println(email)
+);
+</code></pre>
+<h3 id="18-approach-8-use-generics-more-extensively">1.8 Approach 8: Use Generics More Extensively</h3>
+<p>Reconsider the method processPersonsWithFunction. The following is a generic version of it that accepts, as a parameter, a collection that contains elements of any data type:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;X, Y&gt; <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">processElements</span><span class="hljs-params">(
+Iterable&lt;X&gt; source,
+Predicate&lt;X&gt; tester,
+Function &lt;X, Y&gt; mapper,
+Consumer&lt;Y&gt; block)</span> </span>{
+<span class="hljs-keyword">for</span> (X p : source) {
+<span class="hljs-keyword">if</span> (tester.test(p)) {
+Y data = mapper.apply(p);
+block.accept(data);
+}
+}
+}
+</code></pre>
+<p>To print the e-mail address of members who are eligible for Selective Service, invoke the processElements method as follows:</p>
+<pre><code class="lang-java">processElements(
+roster,
+p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>,
+p -&gt; p.getEmailAddress(),
+email -&gt; System.out.println(email)
+);
+</code></pre>
+<p>This method invocation performs the following actions:</p>
+<ul>
+<li>Obtains a source of objects from the collection source. In this example, it obtains a source of Person objects from the collection roster. Notice that the collection roster, which is a collection of type List, is also an object of type Iterable.</li>
+<li>Filters objects that match the Predicate object tester. In this example, the Predicate object is a lambda expression that specifies which members would be eligible for Selective Service.</li>
+<li>Maps each filtered object to a value as specified by the Function object mapper. In this example, the Function object is a lambda expression that returns the e-mail address of a member.</li>
+<li>Performs an action on each mapped object as specified by the Consumer object block. In this example, the Consumer object is a lambda expression that prints a string, which is the e-mail address returned by the Function object.</li>
+</ul>
+<p>You can replace each of these actions with an aggregate operation.</p>
+<h3 id="19-approach-9-use-aggregate-operations-that-accept-lambda-expressions-as-parameters">1.9 Approach 9: Use Aggregate Operations That Accept Lambda Expressions as Parameters</h3>
+<p>The following example uses aggregate operations to print the e-mail addresses of those members contained in the collection roster who are eligible for Selective Service:</p>
+<pre><code class="lang-java">roster
+.stream()
+.filter(
+p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>)
+.map(p -&gt; p.getEmailAddress())
+.forEach(email -&gt; System.out.println(email));
+</code></pre>
+<p>The following table maps each of the operations the method processElements performs with the corresponding aggregate operation:
+<img src="../assets/action-and-aggregation.PNG" alt=""></p>
+<p>The operations filter, map, and forEach are aggregate operations. Aggregate operations process elements from a stream, not directly from a collection (which is the reason why the first method invoked in this example is stream). A stream is a sequence of elements. Unlike a collection, it is not a data structure that stores elements. Instead, a stream carries values from a source, such as collection, through a pipeline. A pipeline is a sequence of stream operations, which in this example is filter- map-forEach. In addition, aggregate operations typically accept lambda expressions as parameters, enabling you to customize how they behave.</p>
+<p>For a more thorough discussion of aggregate operations, see the Aggregate Operations lesson.</p>
+<h2 id="2-lambda-expressions-in-gui-applications">2. Lambda Expressions in GUI Applications</h2>
+<p>To process events in a graphical user interface (GUI) application, such as keyboard actions, mouse actions, and scroll actions, you typically create event handlers, which usually involves implementing a particular interface. Often, event handler interfaces are functional interfaces; they tend to have only one method.</p>
+<p>In the JavaFX example HelloWorld.java (discussed in the previous section Anonymous Classes), you can replace the highlighted anonymous class with a lambda expression in this statement:</p>
+<pre><code class="lang-java">btn.setOnAction(<span class="hljs-keyword">new</span> EventHandler&lt;ActionEvent&gt;() {
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handle</span><span class="hljs-params">(ActionEvent event)</span> </span>{
+System.out.println(<span class="hljs-string">&quot;Hello World!&quot;</span>);
+}
+});
+</code></pre>
+<p>The method invocation btn.setOnAction specifies what happens when you select the button represented by the btn object. This method requires an object of type EventHandler<actionevent>. The EventHandler<actionevent> interface contains only one method, void handle(T event). This interface is a functional interface, so you could use the following highlighted lambda expression to replace it:</actionevent></actionevent></p>
+<pre><code class="lang-java">btn.setOnAction(
+event -&gt; System.out.println(<span class="hljs-string">&quot;Hello World!&quot;</span>)
+);
+</code></pre>
+<h2 id="3-syntax-of-lambda-expressions">3. Syntax of Lambda Expressions</h2>
+<p>A lambda expression consists of the following:</p>
+<ul>
+<li>A comma-separated list of formal parameters enclosed in parentheses. The CheckPerson.test method contains one parameter, p, which represents an instance of the Person class.</li>
+<li><strong>Note</strong>: You can omit the data type of the parameters in a lambda expression. In addition, you can omit the parentheses if there is only one parameter. For example, the following lambda expression is also valid:<pre><code class="lang-java">p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>
+</code></pre>
+</li>
+<li><p>The arrow token, -&gt;</p>
+</li>
+<li><p>A body, which consists of a single expression or a statement block. This example uses the following expression:</p>
+<pre><code class="lang-java">p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>
+</code></pre>
+<p>If you specify a single expression, then the Java runtime evaluates the expression and then returns its value. Alternatively, you can use a return statement:</p>
+<pre><code class="lang-java">p -&gt; {
+<span class="hljs-keyword">return</span> p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>;
+}
+</code></pre>
+</li>
+</ul>
+<p>A return statement is not an expression; in a lambda expression, you must enclose statements in braces ({}). However, you do not have to enclose a void method invocation in braces. For example, the following is a valid lambda expression:</p>
+<pre><code class="lang-java">email -&gt; System.out.println(email)
+</code></pre>
+<p>Note that a lambda expression looks a lot like a method declaration; you can consider lambda expressions as anonymous methods&#x2014;methods without a name.</p>
+<p>The following example, Calculator, is an example of lambda expressions that take more than one formal parameter:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Calculator</span> </span>{
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IntegerMath</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">operation</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span></span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">operateBinary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b, IntegerMath op)</span> </span>{
+<span class="hljs-keyword">return</span> op.operation(a, b);
+}
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String... args)</span> </span>{
+Calculator myApp = <span class="hljs-keyword">new</span> Calculator();
+IntegerMath addition = (a, b) -&gt; a + b;
+IntegerMath subtraction = (a, b) -&gt; a - b;
+System.out.println(<span class="hljs-string">&quot;40 + 2 = &quot;</span> +
+myApp.operateBinary(<span class="hljs-number">40</span>, <span class="hljs-number">2</span>, addition));
+System.out.println(<span class="hljs-string">&quot;20 - 10 = &quot;</span> +
+myApp.operateBinary(<span class="hljs-number">20</span>, <span class="hljs-number">10</span>, subtraction));
+}
+}
+</code></pre>
+<p>The method operateBinary performs a mathematical operation on two integer operands. The operation itself is specified by an instance of IntegerMath. The example defines two operations with lambda expressions, addition and subtraction. The example prints the following:</p>
+<pre><code class="lang-java"><span class="hljs-number">40</span> + <span class="hljs-number">2</span> = <span class="hljs-number">42</span>
+<span class="hljs-number">20</span> - <span class="hljs-number">10</span> = <span class="hljs-number">10</span>
+</code></pre>
+<h2 id="4-target-typing">4. Target Typing</h2>
+<p>How do you determine the type of a lambda expression? Recall the lambda expression that selected members who are male and between the ages 18 and 25 years:</p>
+<pre><code class="lang-java">p -&gt; p.getGender() == Person.Sex.MALE
+&amp;&amp; p.getAge() &gt;= <span class="hljs-number">18</span>
+&amp;&amp; p.getAge() &lt;= <span class="hljs-number">25</span>
+</code></pre>
+<p>This lambda expression was used in the following two methods:</p>
+<ul>
+<li><p>public static void printPersons(List<person> roster, CheckPerson tester) in Approach 3: Specify Search Criteria Code in a Local Class</person></p>
+</li>
+<li><p>public void printPersonsWithPredicate(List<person> roster, Predicate<person> tester) in Approach 6: Use Standard Functional Interfaces with Lambda Expressions</person></person></p>
+</li>
+</ul>
+<p>When the Java runtime invokes the method printPersons, it&apos;s expecting a data type of CheckPerson, so the lambda expression is of this type. However, when the Java runtime invokes the method printPersonsWithPredicate, it&apos;s expecting a data type of Predicate<person>, so the lambda expression is of this type. The data type that these methods expect is called the target type. To determine the type of a lambda expression, the Java compiler uses the target type of the context or situation in which the lambda expression was found. It follows that you can only use lambda expressions in situations in which the Java compiler can determine a target type:</person></p>
+<p>Variable declarations</p>
+<ul>
+<li>Assignments</li>
+<li>Return statements</li>
+<li>Array initializers</li>
+<li>Method or constructor arguments</li>
+<li>Lambda expression bodies</li>
+<li>Conditional expressions, ?:</li>
+<li>Cast expressions</li>
+</ul>
+<p><strong>Target Types and Method Arguments</strong></p>
+<p>For method arguments, the Java compiler determines the target type with two other language features: overload resolution and type argument inference.</p>
+<p>Consider the following two functional interfaces ( java.lang.Runnable and java.util.concurrent.Callable<v>):</v></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Runnable</span> </span>{
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Callable</span>&lt;<span class="hljs-title">V</span>&gt; </span>{
+<span class="hljs-function">V <span class="hljs-title">call</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<p>The method Runnable.run does not return a value, whereas Callable<v>.call does.</v></p>
+<p>Suppose that you have overloaded the method invoke as follows (see Defining Methods for more information about overloading methods):</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">invoke</span><span class="hljs-params">(Runnable r)</span> </span>{
+r.run();
+}
+
+&lt;T&gt; <span class="hljs-function">T <span class="hljs-title">invoke</span><span class="hljs-params">(Callable&lt;T&gt; c)</span> </span>{
+<span class="hljs-keyword">return</span> c.call();
+}
+</code></pre>
+<p>Which method will be invoked in the following statement?</p>
+<pre><code class="lang-java">String s = invoke(() -&gt; <span class="hljs-string">&quot;done&quot;</span>);
+</code></pre>
+<p>The method invoke(Callable<t>) will be invoked because that method returns a value; the method invoke(Runnable) does not. In this case, the type of the lambda expression () -&gt; &quot;done&quot; is Callable<t>.</t></t></p>
+<p><strong>Serialization</strong></p>
+<p>You can serialize a lambda expression if its target type and its captured arguments are serializable. However, like inner classes, the serialization of lambda expressions is strongly discouraged.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter09_jdbc.html" class="navigation navigation-prev " aria-label="Previous page: JDBC">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter11_aggregate-operations.html" class="navigation navigation-next " aria-label="Next page: Aggregate Operation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lambda","level":"2.10","depth":1,"next":{"title":"Aggregate Operation","level":"2.11","depth":1,"path":"java-quick-review/chapter11_aggregate-operations.md","ref":"java-quick-review/chapter11_aggregate-operations.md","articles":[]},"previous":{"title":"JDBC","level":"2.9","depth":1,"path":"java-quick-review/chapter09_jdbc.md","ref":"java-quick-review/chapter09_jdbc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java-quick-review/chapter10_lambda-expressions.md","mtime":"2020-12-20T13:04:36.793Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T13:40:29.986Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
