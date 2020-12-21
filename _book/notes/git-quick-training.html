@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>git quick training · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="files/git-commands.html" />
+    <link rel="next" href="cmd-commands.html" />
     
     
-    <link rel="prev" href="../java-quick-review/contents/code_tips.html" />
+    <link rel="prev" href="git-commands.html" />
     
 
     </head>
@@ -369,23 +369,9 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="notes.html">
+        <li class="chapter " data-level="3.1" data-path="git-commands.html">
             
-                <a href="notes.html">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1.1" data-path="files/git-commands.html">
-            
-                <a href="files/git-commands.html">
+                <a href="git-commands.html">
             
                     
                     git commands
@@ -396,9 +382,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="files/git-quick-training.html">
+        <li class="chapter active" data-level="3.2" data-path="git-quick-training.html">
             
-                <a href="files/git-quick-training.html">
+                <a href="git-quick-training.html">
             
                     
                     git quick training
@@ -409,9 +395,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="files/cmd-commands.html">
+        <li class="chapter " data-level="3.3" data-path="cmd-commands.html">
             
-                <a href="files/cmd-commands.html">
+                <a href="cmd-commands.html">
             
                     
                     cmd commands
@@ -419,24 +405,6 @@
                 </a>
             
 
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.4" data-path="files/aws-big-data-exam.html">
-            
-                <a href="files/aws-big-data-exam.html">
-            
-                    
-                    AWS Big Data Exam Note
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -470,7 +438,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Introduction</a>
+        <a href=".." >git quick training</a>
     </h1>
 </div>
 
@@ -482,7 +450,45 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h2 id="configuration">Configuration</h2>
+<p><code>git config --global user.name &quot;k1000&quot;</code></p>
+<p><code>git config --global user.email &quot;john.doe@email.com&quot;</code></p>
+<p><code>git config -l</code></p>
+<p>//view git configs</p>
+<p><code>git config --global --unset user.email</code> </p>
+<p>//delete a config</p>
+<h2 id="remote-repo-commands">Remote Repo Commands</h2>
+<p> <code>git init</code> </p>
+<p> //create an empty Git repository or reinitialize an existing one</p>
+<p><code>git clone https://K26511@bitbucket.finra.org/scm/mrp/fi046.git</code></p>
+<p>//create an empty Git repository or reinitialize an existing one</p>
+<h2 id="making-changes">Making Changes</h2>
+<p><code>git status</code></p>
+<p>// show the working tree status: lists all new or modified unstaged files</p>
+<p><code>git checkout --&lt;file&gt;</code></p>
+<p>//discard changes in the working directory</p>
+<p><code>git add &lt;file.name&gt;</code> </p>
+<p>//add file contents to the index</p>
+<p><code>git add -A</code> </p>
+<p>//stages All (modified, deleted, untracted, and new files)</p>
+<p><code>git add -u</code>  </p>
+<p>//stages modified and deleted, without new</p>
+<p><code>git reset HEAD &lt;file&gt;</code></p>
+<p>// unstage the changes</p>
+<p><code>git commit -m [&apos;add a message&apos;]</code></p>
+<p>//record changes to the repository</p>
+<h2 id="check-in-code">Check-in code</h2>
+<p><code>git fetch</code></p>
+<p>// download objects and refs from remote repository</p>
+<p><code>git diff origin/master master</code></p>
+<p>//Show changes between commits, commit and working tree, etc</p>
+<p><code>git pull</code></p>
+<p>// fetch from and integrate with a local branch</p>
+<p><code>git push origin/master master</code></p>
+<p>// update remote master branch</p>
+<p><code>git log</code></p>
+<p>// show all commit logs</p>
+
                                 
                                 </section>
                             
@@ -493,12 +499,12 @@
 
             
                 
-                <a href="../java-quick-review/contents/code_tips.html" class="navigation navigation-prev " aria-label="Previous page: Code Tips">
+                <a href="git-commands.html" class="navigation navigation-prev " aria-label="Previous page: git commands">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="files/git-commands.html" class="navigation navigation-next " aria-label="Next page: git commands">
+                <a href="cmd-commands.html" class="navigation navigation-next " aria-label="Next page: cmd commands">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -509,7 +515,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"3.1","depth":1,"next":{"title":"git commands","level":"3.1.1","depth":2,"path":"notes/files/git-commands.md","ref":"notes/files/git-commands.md","articles":[]},"previous":{"title":"Code Tips","level":"2.1.18","depth":2,"path":"java-quick-review/contents/code_tips.md","ref":"java-quick-review/contents/code_tips.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"notes/notes.md","mtime":"2020-12-21T02:46:48.612Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-21T12:59:58.120Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git quick training","level":"3.2","depth":1,"next":{"title":"cmd commands","level":"3.3","depth":1,"path":"notes/cmd-commands.md","ref":"notes/cmd-commands.md","articles":[]},"previous":{"title":"git commands","level":"3.1","depth":1,"path":"notes/git-commands.md","ref":"notes/git-commands.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"notes/git-quick-training.md","mtime":"2020-12-20T20:19:04.841Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-20T20:38:06.948Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -6,12 +6,8 @@ git add -A;git commit -m 'updated docs';git push
 # checkout to the gh-pages branch
 git checkout gh-pages;git pull
 
-<<<<<<< HEAD
 # pull the latest updates
 git pull origin gh-pages --rebase
-=======
-git merge main
->>>>>>> main
 
 # copy the static site files into the current directory.
 cp -R _book/* .
