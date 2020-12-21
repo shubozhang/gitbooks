@@ -8,9 +8,6 @@ git checkout gh-pages
 
 git merge main
 
-# pull the latest updates
-git pull origin gh-pages --rebase
-
 # copy the static site files into the current directory.
 cp -R _book/* .
 
