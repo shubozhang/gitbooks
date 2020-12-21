@@ -1,0 +1,827 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AWS Big Data Exam Note · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Shubo Zhang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="cmd-commands.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java Quick Review</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../java-quick-review/intro.html">
+            
+                <a href="../../java-quick-review/intro.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../java-quick-review/contents/chapter01_syntax.html">
+            
+                <a href="../../java-quick-review/contents/chapter01_syntax.html">
+            
+                    
+                    Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../java-quick-review/contents/chapter02_oo_concepts.html">
+            
+                <a href="../../java-quick-review/contents/chapter02_oo_concepts.html">
+            
+                    
+                    OO Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../java-quick-review/contents/chapter03_exception.html">
+            
+                <a href="../../java-quick-review/contents/chapter03_exception.html">
+            
+                    
+                    Exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../java-quick-review/contents/chapter04_collections.html">
+            
+                <a href="../../java-quick-review/contents/chapter04_collections.html">
+            
+                    
+                    Collections
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../java-quick-review/contents/chapter05_generics.html">
+            
+                <a href="../../java-quick-review/contents/chapter05_generics.html">
+            
+                    
+                    Generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../java-quick-review/contents/chapter06_reflection.html">
+            
+                <a href="../../java-quick-review/contents/chapter06_reflection.html">
+            
+                    
+                    Reflection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../java-quick-review/contents/chapter07_io.html">
+            
+                <a href="../../java-quick-review/contents/chapter07_io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../java-quick-review/contents/chapter08_concurrency.html">
+            
+                <a href="../../java-quick-review/contents/chapter08_concurrency.html">
+            
+                    
+                    Concurrency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../java-quick-review/contents/chapter09_jdbc.html">
+            
+                <a href="../../java-quick-review/contents/chapter09_jdbc.html">
+            
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../java-quick-review/contents/chapter10_lambda-expressions.html">
+            
+                <a href="../../java-quick-review/contents/chapter10_lambda-expressions.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../java-quick-review/contents/chapter11_aggregate-operations.html">
+            
+                <a href="../../java-quick-review/contents/chapter11_aggregate-operations.html">
+            
+                    
+                    Aggregate Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../java-quick-review/contents/appendix-i_HashMap.html">
+            
+                <a href="../../java-quick-review/contents/appendix-i_HashMap.html">
+            
+                    
+                    Appendix-HashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../../java-quick-review/contents/appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                <a href="../../java-quick-review/contents/appendix-ii_HashMap_ConcurrentHashMap.html">
+            
+                    
+                    Appendix-ConcurrentHashMap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../../java-quick-review/contents/unit-testing.html">
+            
+                <a href="../../java-quick-review/contents/unit-testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../../java-quick-review/contents/best_practices_in_implementation.html">
+            
+                <a href="../../java-quick-review/contents/best_practices_in_implementation.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../../java-quick-review/contents/interview_questions.html">
+            
+                <a href="../../java-quick-review/contents/interview_questions.html">
+            
+                    
+                    Interview Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../../java-quick-review/contents/code_style.html">
+            
+                <a href="../../java-quick-review/contents/code_style.html">
+            
+                    
+                    Code Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../../java-quick-review/contents/code_tips.html">
+            
+                <a href="../../java-quick-review/contents/code_tips.html">
+            
+                    
+                    Code Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Notes</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../notes.html">
+            
+                <a href="../notes.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="git-commands.html">
+            
+                <a href="git-commands.html">
+            
+                    
+                    git commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="git-quick-training.html">
+            
+                <a href="git-quick-training.html">
+            
+                    
+                    git quick training
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="cmd-commands.html">
+            
+                <a href="cmd-commands.html">
+            
+                    
+                    cmd commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4" data-path="aws-big-data-exam.html">
+            
+                <a href="aws-big-data-exam.html">
+            
+                    
+                    AWS Big Data Exam Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >AWS Big Data Exam Note</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="aws-big-data-specilty">AWS Big Data Specilty</h1>
+<ul>
+<li>Data Collection</li>
+<li>Data Storage</li>
+<li>Data Processing</li>
+<li>Data Analytics</li>
+<li>Data Visualization</li>
+<li>Data Security</li>
+</ul>
+<h2 id="collection">Collection</h2>
+<ul>
+<li><p>Real Time - immediate actions</p>
+<ul>
+<li>Kinesis Data Streams (KDS)</li>
+<li>Simple Queue Service (SQS)</li>
+<li>Internet of Things (IoT)</li>
+</ul>
+</li>
+<li><p>Near-real time - reactive actions</p>
+<ul>
+<li>Kinesis Data Firehose (KDF)</li>
+<li>Database Migration Service (DMS)</li>
+</ul>
+</li>
+<li><p>Batch - historical analysis (usually very large dataset)</p>
+<ul>
+<li>Snowball</li>
+<li>Data Pipeline</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-aws-kinesis-data-stream-kds">1. AWS Kinesis Data Stream (KDS)</h3>
+<ul>
+<li>Kinesis is a managed alternative to Apache Kafka</li>
+<li>Great for &quot;real-time&quot; big data</li>
+<li>Great for application logs, metrics, IoT, clickstreams</li>
+<li>Great for stream processing framework (Spark, NiFi, etc...)</li>
+<li><p>Great for automatically replicated synchronously to 3 AZ</p>
+</li>
+<li><p>KDS: low latency streaming ingest at scale</p>
+</li>
+<li>KDF: load streams into S3, Redshift, ElasticSearch, Splunk, etc...</li>
+</ul>
+<p>1.1 Kinesis</p>
+<ul>
+<li>Input sources (click streams, IoT devices, Metic and logs)</li>
+<li>KDS -&gt; Kinesis Analytics -&gt; KDF</li>
+<li>Output source (S3, Redshift)</li>
+</ul>
+<p>1.2 Kinesis Data Streams</p>
+<ul>
+<li>Streams are divided in ordered Shards</li>
+<li>Data retention in 24 hours by default, can go up to 7 days.</li>
+<li>Ability to reprocess / replay data</li>
+<li>Multiple applications can consume the same stream</li>
+<li>Real-time processing with scale of throughput</li>
+<li>KDS is not database. Once data is inserted in KDS, it can&apos;t be deleted (immutability). So it is append only steam.</li>
+</ul>
+<p>1.3 KDS Shards</p>
+<ul>
+<li>One stream is made of many different shards</li>
+<li>The number of shards can be changed by reshard or merge</li>
+<li>Records are ordered only per shard, not globally.</li>
+<li>Batching available or per message calls.</li>
+</ul>
+<p>1.4 KDS Records</p>
+<ul>
+<li>Data blob: serialized as bytes. Up to 1 MB.</li>
+<li>Record key: same key = same shard. It should use a highly distributed key to avoid hot partition problem</li>
+<li>Sequence number: Added by Kinesis after ingestion. Unique identifier for each record put in shards.</li>
+</ul>
+<p>1.5 KDS Limits</p>
+<ul>
+<li>Producer:<ul>
+<li>Per shard: 1MB/s or 1000 records at write</li>
+<li>&quot;ProvisionedThroughputException&quot; otherwise</li>
+</ul>
+</li>
+<li>Consumer classic:<ul>
+<li>Across all consumers: 2MB/s at read per shard</li>
+<li>Across all consumers: 5 API calls per shard</li>
+</ul>
+</li>
+<li>Consumer Enhanced Fan-Out:<ul>
+<li>Per enhanded consumer: 2MB/s at read per shard</li>
+<li>No API calls needed (push model)</li>
+</ul>
+</li>
+<li>Data retention:<ul>
+<li>24 hours by default, can go up to 7 days.</li>
+</ul>
+</li>
+</ul>
+<p>1.6 Kinesis Producers</p>
+<ul>
+<li>Kinesis SDK:<ul>
+<li>Synchronous APIs that ared used: PutRecord and PutRecords</li>
+<li>PutRecords uses batching and increasing throughput =&gt; less HTTP requests</li>
+<li>ProvisionedThroughputExceeded if we go over the limits (exceeding MB/s or TPS per shard, hot partition shard)<ul>
+<li>Solution 1: Retries with backoff</li>
+<li>Solution 2: Increase shards (scaling)</li>
+<li>Solution 3: Ensure your partition key is a good one</li>
+</ul>
+</li>
+<li>AWS mobile sdk, android, ios, etc...</li>
+<li>Use case: low throughput, high latency, simple API, aws lambda</li>
+<li>Managed AWS sources for Kinesis Data Streams:<ul>
+<li>CloudWatch logs</li>
+<li>AWS IoT</li>
+<li>Kinesis Data Analytics (can be a producer to KDS)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Kinesis Producer Library<ul>
+<li><strong>Synchronous or Asynchronous API</strong> (better performance for async)</li>
+<li>Used for building high performance, long-running produces</li>
+<li>Automated and configurable retry mechanism</li>
+<li>Easy to use and highly configurable C++ / Java library</li>
+<li>Submitting metrics to CloudWatch for mornitoring</li>
+<li><strong>Batching</strong> (both turned on by default) - increase throughput, decrease cost:<ul>
+<li>Collect records and write to multiple shards in the same PutRecords API call</li>
+<li>Aggregate - increase latency: <ul>
+<li>Capability to store multiple records in one record, so it can go over the 1000 records per second limit</li>
+<li>Increase payload size and improve throughput ( max 1MB/s limit)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Batching example</strong>: add latency to increase throughput<ul>
+<li>aggregation rt1 (r1 2kb, r2 40kb, r3 500kb)</li>
+<li>aggregation rt2 (r4 1kb, r5 30kb, r6 80kb, r7 200kb)</li>
+<li>Collection (PutRecords rt1 and rt2) and send out as one recod rt. rt contains 7 original records with a total size of 853kb (still less than 1MB)</li>
+<li>batching efficiency: RecordMaxBufferedTime(default 100ms)</li>
+</ul>
+</li>
+<li>Compression: must be implemented by user</li>
+<li>KPL records must be de-coded with KCL or special helper library</li>
+</ul>
+</li>
+<li>Kinesis Agent: just need a configuration to setup <ul>
+<li>Mornitor log files and send them to Kinesis</li>
+<li>Java based agent, build on top of KPL</li>
+<li>Only install in linux environments for now</li>
+<li>features:<ul>
+<li>Write from multiple directories and write to multiple steams</li>
+<li>Routing feature based on directory / log file</li>
+<li>Pre-process data before sending to the streams(single line, csv to json, log to json ...)</li>
+<li>The agent handles file rotation, checkpointing, and retry upon failures</li>
+<li>Emits metrics to CloudWatch for moornitoring</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3rd parth library: spark, Log4j, Appenders, Flume, Kafka Connect, NiFi...</li>
+</ul>
+<p>1.7 Kinesis Consumers</p>
+<ul>
+<li>Kinesis SDK<ul>
+<li>Consumers pull data from a shard</li>
+<li>Each shard has 2MB/s total aggregate throughput</li>
+<li>GetRecords return up to 10MB of data (then throttle for 5 seconds) or up to 10,000 records</li>
+<li>Max of 5 GetRecords API calls per shard per second = 200ms latency</li>
+<li>If 5 consumers pull data from the same shard, means every consumer can poll once / per second and receives less than 400KB/s</li>
+</ul>
+</li>
+<li>Kinesis Client Library (KCL)<ul>
+<li>Java / Golang / Python / Ruby / Node / .NET</li>
+<li>Read records from Kinesis produced with KPL (de-aggregation)</li>
+<li>Share multiple shards with multiple consumers in one group, shard discovery</li>
+<li>Checkpointing feature to resume progress </li>
+<li>Leverage DynamoDB for coordination and checkpointing (one row per shard)<ul>
+<li>Make sure you provision enough WCU/RCU or use on-demand for DynamoDB</li>
+<li><strong>Otherwise DynamoDB may slow down KCL on checkpointing</strong></li>
+</ul>
+</li>
+<li>Record processors will process the data</li>
+</ul>
+</li>
+<li>Kinesis Connector Library <ul>
+<li>Old Java library, 2016, leverage on KCL library</li>
+<li>Must run on EC2</li>
+<li>Write data to<ul>
+<li>S3</li>
+<li>DynamoDB</li>
+<li>Redshift</li>
+<li>ElasticSearch</li>
+</ul>
+</li>
+<li>It is replaced by Kinesis Firehose and Lambda</li>
+</ul>
+</li>
+<li>AWS Lambda:<ul>
+<li>Can source records from Kinesis Data Streams</li>
+<li>Lambda consumer has a library to de-aggregate record from the KPL</li>
+<li>Lambda can be used to run lightweight ETL to :<ul>
+<li>S3</li>
+<li>DynamoDB</li>
+<li>Redshift</li>
+<li>ElasticSearch</li>
+<li>Anywhere you want</li>
+</ul>
+</li>
+<li>Can be used to trigger notification / send emails</li>
+<li>Lambda has a configurable batch size ( more in lambda section)</li>
+</ul>
+</li>
+<li>Kinesis Firehose</li>
+<li>Kinesis Consumer Enhanced Fan-Out</li>
+<li>3rd party libraries: spark, log4j, appenders, flume, kafka, connect...</li>
+</ul>
+<h4 id="collection-tools">Collection Tools:</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Producer</th>
+<th>Consumer</th>
+<th>collection system (order, data structure, metadata)</th>
+<th>durability</th>
+<th>availablity</th>
+<th>security</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IoT</td>
+<td>1.IoT device 2.Cli and SDK 3.AWS services</td>
+<td>S3, DynamoDB, etc.</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1. X.509 2.Cognito 3. IAM</td>
+</tr>
+<tr>
+<td>Kinesis Data Streaming</td>
+<td>1.IOT 2.Kinesis Agent 3.Kinesis Producer Library 4.AWS SDKs</td>
+<td>1.Data Ayalytics 2.Kinesis consumer lib 3.AWS SDKs</td>
+</tr>
+<tr>
+<td>Kinesis Firehose Streaming</td>
+<td>1.IOT 2.Kinesis Agent 3.Kinesis Producer Library 4.AWS SDKs</td>
+<td>1.Other AWS service(s3,redshift,dynamodb,emr) 2.Same as KDS</td>
+</tr>
+<tr>
+<td>Database Migration Service</td>
+<td>database</td>
+<td>database in AWS</td>
+</tr>
+<tr>
+<td>Greengrass</td>
+<td>local devices</td>
+<td>AWS service</td>
+</tr>
+<tr>
+<td>Snowball</td>
+<td>on premises</td>
+<td>AWS storage</td>
+</tr>
+<tr>
+<td>Direct Connect</td>
+<td>on premises</td>
+<td>AWS service</td>
+</tr>
+</tbody>
+</table>
+<p>Sample questions:</p>
+<ol>
+<li>5 clients will take 80% of Redshift resources, other small clients take 20%. How to handle this case?</li>
+<li>KDS consumed 2 million records, but lambda only processes 450k records and not throttleing problem. What is the potential test?</li>
+<li>Lots of small S3 files and found EMA slows down. What is the potential solution? Aggregate small files to big file?</li>
+<li>which api makes sure that the message will be delivered? .add() or putItem().</li>
+<li><p>Create a user lookup system. Each user only have the right to access its own record. All users already have amazon account. How to design?</p>
+<ul>
+<li>Use amazon account to get a federate token. Create a dynamoDB table and use user_id as partition key. Create a IAM policy with leading head and read access only.</li>
+</ul>
+</li>
+<li><p>How to sync EMRFS and EMR to make sure EMR always read the latest data from S3?</p>
+</li>
+<li>Kerberos</li>
+<li>Big data tool for quering PB data. Pig?</li>
+<li>ML Classification: spam emails that needs to be contact or ignore. What is target attributes?</li>
+<li>Company opens anther market in other country. New country requires regulation on all past 24 transactions. Cost effective solution is to use KDS to export data to other region?</li>
+<li>Customer wants to query data but still uses JDBC connection. Use presto to open JDBC connection?</li>
+<li>Company has thousands of shipments. Each client may have one or more orders. How to allow each client to trace its own order, view and receive notification.</li>
+<li>Segment</li>
+<li>EC2 types for machine learning, computing etc.</li>
+<li>EMR spark is used to process streaming data. Company wants to keep the original raw data. Put KFS in front of the spark?</li>
+<li>Redshift EVEN distribute</li>
+<li>Redshift leaf??</li>
+<li>IAM API keys.</li>
+<li>Kinesis cost: random_cut_forest</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cmd-commands.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: cmd commands">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AWS Big Data Exam Note","level":"3.1.4","depth":2,"previous":{"title":"cmd commands","level":"3.1.3","depth":2,"path":"notes/files/cmd-commands.md","ref":"notes/files/cmd-commands.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","advanced-emoji@^0.2.1","include-codeblock@^3.0.2","chapter-fold","back-to-top-button"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © shubozhang.com 2020","modify_label":"modified_date：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Shubo Zhang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","output.name":"site","gitbook":"3.2.3","description":""},"file":{"path":"notes/files/aws-big-data-exam.md","mtime":"2020-12-20T13:03:38.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-21T02:46:44.967Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

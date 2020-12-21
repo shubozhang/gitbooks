@@ -24,6 +24,8 @@
     * [Code Tips](java-quick-review/contents/code_tips.md)
 
 ## Notes
-* [git commands](notes/git-commands.md)
-* [git quick training](notes/git-quick-training.md)
-* [cmd commands](notes/cmd-commands.md)
+* [Introduction](notes/notes.md)
+  * [git commands](notes/files/git-commands.md)
+  * [git quick training](notes/files/git-quick-training.md)
+  * [cmd commands](notes/files/cmd-commands.md)
+  * [AWS Big Data Exam Note](notes/files/aws-big-data-exam.md)
