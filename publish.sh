@@ -1,7 +1,7 @@
 # install the plugins and build the static site
 gitbook install && gitbook build --config=book.json
 
-git add -A;git commit -m 'updated docs';
+git add -A;git commit -m 'updated docs';git push
 
 # checkout to the gh-pages branch
 git checkout gh-pages;git pull
